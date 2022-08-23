@@ -1,0 +1,149 @@
+2022-08-12 08:15:05.471 -07:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-08-12 08:15:05.664 -07:00 [DBG] Hosting starting
+2022-08-12 08:15:05.709 -07:00 [INF] User profile is available. Using '/Users/chandlerpotter/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-12 08:15:05.718 -07:00 [DBG] Reading data from file '/Users/chandlerpotter/.aspnet/DataProtection-Keys/key-2c2b681e-5d66-4926-8d25-12ef831d143a.xml'.
+2022-08-12 08:15:05.749 -07:00 [DBG] Found key {2c2b681e-5d66-4926-8d25-12ef831d143a}.
+2022-08-12 08:15:05.772 -07:00 [DBG] Considering key {2c2b681e-5d66-4926-8d25-12ef831d143a} with expiration date 2022-08-30 02:56:11Z as default key.
+2022-08-12 08:15:05.779 -07:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2022-08-12 08:15:05.789 -07:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2022-08-12 08:15:05.790 -07:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2022-08-12 08:15:05.803 -07:00 [DBG] Using key {2c2b681e-5d66-4926-8d25-12ef831d143a} as the default key.
+2022-08-12 08:15:05.805 -07:00 [DBG] Key ring with default key {2c2b681e-5d66-4926-8d25-12ef831d143a} was loaded during application startup.
+2022-08-12 08:15:06.030 -07:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 8E52971A6A589C1DFB045CCF462DA2B18BE72287)
+2022-08-12 08:15:06.208 -07:00 [INF] Now listening on: https://localhost:7073
+2022-08-12 08:15:06.235 -07:00 [INF] Now listening on: http://localhost:5170
+2022-08-12 08:15:06.259 -07:00 [DBG] Loaded hosting startup assembly NetflixTitles.API
+2022-08-12 08:15:06.261 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-12 08:15:06.262 -07:00 [INF] Hosting environment: Development
+2022-08-12 08:15:06.262 -07:00 [INF] Content root path: /Users/chandlerpotter/Projects/NetflixTitles/NetflixTitles.API/
+2022-08-12 08:15:06.262 -07:00 [DBG] Hosting started
+2022-08-12 08:15:07.258 -07:00 [DBG] Connection id "0HMJSELODDSE5" accepted.
+2022-08-12 08:15:07.263 -07:00 [DBG] Connection id "0HMJSELODDSE5" started.
+2022-08-12 08:15:07.394 -07:00 [DBG] Connection id "0HMJSELODDSE6" accepted.
+2022-08-12 08:15:07.395 -07:00 [DBG] Connection id "0HMJSELODDSE6" started.
+2022-08-12 08:15:07.407 -07:00 [DBG] Connection 0HMJSELODDSE5 established using the following protocol: "Tls12"
+2022-08-12 08:15:07.550 -07:00 [DBG] Connection 0HMJSELODDSE6 established using the following protocol: "Tls12"
+2022-08-12 08:15:07.600 -07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7073/ - -
+2022-08-12 08:15:07.607 -07:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-08-12 08:15:07.668 -07:00 [DBG] No candidates found for the request path '/'
+2022-08-12 08:15:07.670 -07:00 [DBG] Request did not match any endpoints
+2022-08-12 08:15:07.720 -07:00 [DBG] The request path  does not match the path filter
+2022-08-12 08:15:07.795 -07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-08-12 08:15:07.807 -07:00 [DBG] Connection id "0HMJSELODDSE5" completed keep alive response.
+2022-08-12 08:15:07.814 -07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7073/ - - - 404 0 - 215.1131ms
+2022-08-12 08:15:07.841 -07:00 [DBG] Connection id "0HMJSELODDSE7" accepted.
+2022-08-12 08:15:07.842 -07:00 [DBG] Connection id "0HMJSELODDSE7" started.
+2022-08-12 08:15:07.849 -07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7073/favicon.ico - -
+2022-08-12 08:15:07.850 -07:00 [DBG] No candidates found for the request path '/favicon.ico'
+2022-08-12 08:15:07.850 -07:00 [DBG] Request did not match any endpoints
+2022-08-12 08:15:07.853 -07:00 [DBG] The request path  does not match the path filter
+2022-08-12 08:15:07.856 -07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-08-12 08:15:07.865 -07:00 [DBG] Connection id "0HMJSELODDSE5" completed keep alive response.
+2022-08-12 08:15:07.867 -07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7073/favicon.ico - - - 404 0 - 16.3893ms
+2022-08-12 08:15:08.155 -07:00 [DBG] Connection 0HMJSELODDSE7 established using the following protocol: "Tls12"
+2022-08-12 08:15:08.234 -07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7073/apple-touch-icon-precomposed.png - -
+2022-08-12 08:15:08.235 -07:00 [DBG] No candidates found for the request path '/apple-touch-icon-precomposed.png'
+2022-08-12 08:15:08.235 -07:00 [DBG] Request did not match any endpoints
+2022-08-12 08:15:08.239 -07:00 [DBG] The request path  does not match the path filter
+2022-08-12 08:15:08.243 -07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-08-12 08:15:08.243 -07:00 [DBG] Connection id "0HMJSELODDSE7" completed keep alive response.
+2022-08-12 08:15:08.244 -07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7073/apple-touch-icon-precomposed.png - - - 404 0 - 10.4070ms
+2022-08-12 08:15:08.249 -07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7073/apple-touch-icon.png - -
+2022-08-12 08:15:08.250 -07:00 [DBG] No candidates found for the request path '/apple-touch-icon.png'
+2022-08-12 08:15:08.250 -07:00 [DBG] Request did not match any endpoints
+2022-08-12 08:15:08.250 -07:00 [DBG] The request path  does not match the path filter
+2022-08-12 08:15:08.251 -07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-08-12 08:15:08.252 -07:00 [DBG] Connection id "0HMJSELODDSE7" completed keep alive response.
+2022-08-12 08:15:08.252 -07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7073/apple-touch-icon.png - - - 404 0 - 2.4030ms
+2022-08-12 08:15:16.084 -07:00 [DBG] Connection id "0HMJSELODDSE8" accepted.
+2022-08-12 08:15:16.096 -07:00 [DBG] Connection id "0HMJSELODDSE8" started.
+2022-08-12 08:15:16.237 -07:00 [DBG] Connection 0HMJSELODDSE8 established using the following protocol: "Tls12"
+2022-08-12 08:15:16.243 -07:00 [DBG] Connection id "0HMJSELODDSE9" accepted.
+2022-08-12 08:15:16.269 -07:00 [DBG] Connection id "0HMJSELODDSE9" started.
+2022-08-12 08:15:16.281 -07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7073/swagger/index.html - -
+2022-08-12 08:15:16.283 -07:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2022-08-12 08:15:16.283 -07:00 [DBG] Request did not match any endpoints
+2022-08-12 08:15:16.384 -07:00 [DBG] Connection 0HMJSELODDSE9 established using the following protocol: "Tls12"
+2022-08-12 08:15:16.543 -07:00 [DBG] Connection id "0HMJSELODDSE8" completed keep alive response.
+2022-08-12 08:15:16.545 -07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7073/swagger/index.html - - - 200 - text/html;charset=utf-8 266.5722ms
+2022-08-12 08:15:16.582 -07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7073/swagger/swagger-ui-bundle.js - -
+2022-08-12 08:15:16.582 -07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7073/swagger/swagger-ui.css - -
+2022-08-12 08:15:16.582 -07:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-bundle.js'
+2022-08-12 08:15:16.582 -07:00 [DBG] No candidates found for the request path '/swagger/swagger-ui.css'
+2022-08-12 08:15:16.608 -07:00 [DBG] Request did not match any endpoints
+2022-08-12 08:15:16.608 -07:00 [DBG] Request did not match any endpoints
+2022-08-12 08:15:16.608 -07:00 [DBG] Connection id "0HMJSELODDSEA" accepted.
+2022-08-12 08:15:16.633 -07:00 [DBG] Connection id "0HMJSELODDSEA" started.
+2022-08-12 08:15:16.842 -07:00 [DBG] Connection 0HMJSELODDSEA established using the following protocol: "Tls12"
+2022-08-12 08:15:16.978 -07:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-08-12 08:15:16.979 -07:00 [DBG] Connection id "0HMJSELODDSE8" completed keep alive response.
+2022-08-12 08:15:16.981 -07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7073/swagger/swagger-ui.css - - - 200 143632 text/css 398.0039ms
+2022-08-12 08:15:16.984 -07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7073/swagger/swagger-ui-standalone-preset.js - -
+2022-08-12 08:15:16.986 -07:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js'
+2022-08-12 08:15:16.986 -07:00 [DBG] Request did not match any endpoints
+2022-08-12 08:15:17.075 -07:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-08-12 08:15:17.076 -07:00 [DBG] Connection id "0HMJSELODDSEA" completed keep alive response.
+2022-08-12 08:15:17.154 -07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7073/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 93.8985ms
+2022-08-12 08:15:17.245 -07:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-08-12 08:15:17.248 -07:00 [DBG] Connection id "0HMJSELODDSE9" completed keep alive response.
+2022-08-12 08:15:17.248 -07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7073/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 666.1877ms
+2022-08-12 08:15:17.329 -07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7073/swagger/v1/swagger.json - -
+2022-08-12 08:15:17.329 -07:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2022-08-12 08:15:17.330 -07:00 [DBG] Request did not match any endpoints
+2022-08-12 08:15:17.341 -07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7073/swagger/favicon-16x16.png - -
+2022-08-12 08:15:17.341 -07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7073/swagger/favicon-32x32.png - -
+2022-08-12 08:15:17.342 -07:00 [DBG] No candidates found for the request path '/swagger/favicon-16x16.png'
+2022-08-12 08:15:17.342 -07:00 [DBG] Request did not match any endpoints
+2022-08-12 08:15:17.342 -07:00 [DBG] No candidates found for the request path '/swagger/favicon-32x32.png'
+2022-08-12 08:15:17.342 -07:00 [DBG] Request did not match any endpoints
+2022-08-12 08:15:17.344 -07:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2022-08-12 08:15:17.344 -07:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2022-08-12 08:15:17.344 -07:00 [DBG] Connection id "0HMJSELODDSE6" completed keep alive response.
+2022-08-12 08:15:17.344 -07:00 [DBG] Connection id "0HMJSELODDSE5" completed keep alive response.
+2022-08-12 08:15:17.345 -07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7073/swagger/favicon-32x32.png - - - 200 628 image/png 2.8220ms
+2022-08-12 08:15:17.345 -07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7073/swagger/favicon-16x16.png - - - 200 665 image/png 3.1427ms
+2022-08-12 08:15:17.625 -07:00 [DBG] Connection id "0HMJSELODDSE8" completed keep alive response.
+2022-08-12 08:15:17.625 -07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7073/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 295.8185ms
+2022-08-12 08:15:38.546 -07:00 [DBG] Connection id "0HMJSELODDSE7" received FIN.
+2022-08-12 08:15:38.566 -07:00 [DBG] Connection id "0HMJSELODDSE7" disconnecting.
+2022-08-12 08:15:38.572 -07:00 [DBG] Connection id "0HMJSELODDSE7" sending FIN because: "The client closed the connection."
+2022-08-12 08:15:38.602 -07:00 [DBG] Connection id "0HMJSELODDSE7" stopped.
+2022-08-12 08:15:47.241 -07:00 [DBG] Connection id "0HMJSELODDSE9" received FIN.
+2022-08-12 08:15:47.241 -07:00 [DBG] Connection id "0HMJSELODDSEA" received FIN.
+2022-08-12 08:15:47.367 -07:00 [DBG] Connection id "0HMJSELODDSEA" sending FIN because: "The client closed the connection."
+2022-08-12 08:15:47.367 -07:00 [DBG] Connection id "0HMJSELODDSE9" disconnecting.
+2022-08-12 08:15:47.368 -07:00 [DBG] Connection id "0HMJSELODDSE9" sending FIN because: "The client closed the connection."
+2022-08-12 08:15:47.369 -07:00 [DBG] Connection id "0HMJSELODDSEA" disconnecting.
+2022-08-12 08:15:47.376 -07:00 [DBG] Connection id "0HMJSELODDSE9" stopped.
+2022-08-12 08:15:47.376 -07:00 [DBG] Connection id "0HMJSELODDSEA" stopped.
+2022-08-12 08:16:09.491 -07:00 [DBG] Connection id "0HMJSELODDSE5" received FIN.
+2022-08-12 08:16:09.559 -07:00 [DBG] Connection id "0HMJSELODDSE5" disconnecting.
+2022-08-12 08:16:09.566 -07:00 [DBG] Connection id "0HMJSELODDSE5" stopped.
+2022-08-12 08:16:09.601 -07:00 [DBG] Connection id "0HMJSELODDSE6" received FIN.
+2022-08-12 08:16:09.655 -07:00 [DBG] Connection id "0HMJSELODDSE5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-08-12 08:16:09.666 -07:00 [DBG] Connection id "0HMJSELODDSE6" sending FIN because: "The client closed the connection."
+2022-08-12 08:16:09.698 -07:00 [DBG] Connection id "0HMJSELODDSE6" disconnecting.
+2022-08-12 08:16:09.701 -07:00 [DBG] Connection id "0HMJSELODDSE6" stopped.
+2022-08-12 08:16:18.238 -07:00 [DBG] Connection id "0HMJSELODDSE8" received FIN.
+2022-08-12 08:16:18.240 -07:00 [DBG] Connection id "0HMJSELODDSE8" disconnecting.
+2022-08-12 08:16:18.244 -07:00 [DBG] Connection id "0HMJSELODDSE8" stopped.
+2022-08-12 08:16:18.249 -07:00 [DBG] Connection id "0HMJSELODDSE8" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-08-12 08:16:46.252 -07:00 [DBG] Connection id "0HMJSELODDSEB" accepted.
+2022-08-12 08:16:46.255 -07:00 [DBG] Connection id "0HMJSELODDSEB" started.
+2022-08-12 08:16:46.306 -07:00 [DBG] Connection id "0HMJSELODDSEC" accepted.
+2022-08-12 08:16:46.311 -07:00 [DBG] Connection id "0HMJSELODDSEC" started.
+2022-08-12 08:16:46.556 -07:00 [DBG] Connection 0HMJSELODDSEC established using the following protocol: "Tls12"
+2022-08-12 08:16:46.596 -07:00 [DBG] Connection 0HMJSELODDSEB established using the following protocol: "Tls12"
+2022-08-12 08:16:46.712 -07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7073/swagger/v1/swagger.json - -
+2022-08-12 08:16:46.718 -07:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2022-08-12 08:16:46.719 -07:00 [DBG] Request did not match any endpoints
+2022-08-12 08:16:46.861 -07:00 [DBG] Connection id "0HMJSELODDSEC" completed keep alive response.
+2022-08-12 08:16:46.863 -07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7073/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 175.6122ms
+2022-08-12 08:17:46.727 -07:00 [DBG] Connection id "0HMJSELODDSEC" received FIN.
+2022-08-12 08:17:46.754 -07:00 [DBG] Connection id "0HMJSELODDSEB" received FIN.
+2022-08-12 08:17:46.870 -07:00 [DBG] Connection id "0HMJSELODDSEC" sending FIN because: "The client closed the connection."
+2022-08-12 08:17:46.871 -07:00 [DBG] Connection id "0HMJSELODDSEC" disconnecting.
+2022-08-12 08:17:46.870 -07:00 [DBG] Connection id "0HMJSELODDSEB" sending FIN because: "The client closed the connection."
+2022-08-12 08:17:46.873 -07:00 [DBG] Connection id "0HMJSELODDSEB" disconnecting.
+2022-08-12 08:17:46.874 -07:00 [DBG] Connection id "0HMJSELODDSEB" stopped.
+2022-08-12 08:17:46.875 -07:00 [DBG] Connection id "0HMJSELODDSEC" stopped.

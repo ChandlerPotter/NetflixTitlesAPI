@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "JV+9SakRLzGfN/iAlIbinguXGal+eloa8obXnD2dNmQ=",
+  "Source": "NetflixTitles.API",
+  "BasePath": "_content/NetflixTitles.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

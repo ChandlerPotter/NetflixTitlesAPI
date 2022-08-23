@@ -1,0 +1,752 @@
+2022-08-03 19:55:40.527 -07:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-08-03 19:55:40.717 -07:00 [DBG] Hosting starting
+2022-08-03 19:55:40.759 -07:00 [INF] User profile is available. Using '/Users/chandlerpotter/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-03 19:55:40.767 -07:00 [DBG] Reading data from file '/Users/chandlerpotter/.aspnet/DataProtection-Keys/key-2c2b681e-5d66-4926-8d25-12ef831d143a.xml'.
+2022-08-03 19:55:40.796 -07:00 [DBG] Found key {2c2b681e-5d66-4926-8d25-12ef831d143a}.
+2022-08-03 19:55:40.820 -07:00 [DBG] Considering key {2c2b681e-5d66-4926-8d25-12ef831d143a} with expiration date 2022-08-30 02:56:11Z as default key.
+2022-08-03 19:55:40.827 -07:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2022-08-03 19:55:40.838 -07:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2022-08-03 19:55:40.838 -07:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2022-08-03 19:55:40.851 -07:00 [DBG] Using key {2c2b681e-5d66-4926-8d25-12ef831d143a} as the default key.
+2022-08-03 19:55:40.853 -07:00 [DBG] Key ring with default key {2c2b681e-5d66-4926-8d25-12ef831d143a} was loaded during application startup.
+2022-08-03 19:55:41.099 -07:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 8E52971A6A589C1DFB045CCF462DA2B18BE72287)
+2022-08-03 19:55:41.275 -07:00 [INF] Now listening on: https://localhost:7073
+2022-08-03 19:55:41.327 -07:00 [INF] Now listening on: http://localhost:5170
+2022-08-03 19:55:41.328 -07:00 [DBG] Loaded hosting startup assembly NetflixTitles.API
+2022-08-03 19:55:41.331 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-03 19:55:41.331 -07:00 [INF] Hosting environment: Development
+2022-08-03 19:55:41.332 -07:00 [INF] Content root path: /Users/chandlerpotter/Projects/NetflixTitles/NetflixTitles.API/
+2022-08-03 19:55:41.332 -07:00 [DBG] Hosting started
+2022-08-03 19:55:52.497 -07:00 [DBG] Connection id "0HMJLOJC0KH53" received FIN.
+2022-08-03 19:55:52.518 -07:00 [DBG] Connection id "0HMJLOJC0KH53" accepted.
+2022-08-03 19:55:52.521 -07:00 [DBG] Connection id "0HMJLOJC0KH53" started.
+2022-08-03 19:55:52.552 -07:00 [DBG] Connection id "0HMJLOJC0KH54" accepted.
+2022-08-03 19:55:52.554 -07:00 [DBG] Connection id "0HMJLOJC0KH54" started.
+2022-08-03 19:55:52.624 -07:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-03 19:55:52.927 -07:00 [DBG] Connection id "0HMJLOJC0KH53" stopped.
+2022-08-03 19:55:52.961 -07:00 [DBG] Connection id "0HMJLOJC0KH53" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-08-03 19:55:53.011 -07:00 [DBG] Connection 0HMJLOJC0KH54 established using the following protocol: "Tls12"
+2022-08-03 19:55:53.081 -07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7073/api/authentication/authenticate application/json 70
+2022-08-03 19:55:53.085 -07:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-08-03 19:55:53.179 -07:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/authenticate'
+2022-08-03 19:55:53.188 -07:00 [DBG] Endpoint 'NetflixTitles.API.Controllers.AuthenticationController.Authenticate (NetflixTitles.API)' with route pattern 'api/authentication/authenticate' is valid for the request path '/api/authentication/authenticate'
+2022-08-03 19:55:53.191 -07:00 [DBG] Request matched endpoint 'NetflixTitles.API.Controllers.AuthenticationController.Authenticate (NetflixTitles.API)'
+2022-08-03 19:55:53.225 -07:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-08-03 19:55:53.296 -07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-08-03 19:55:53.301 -07:00 [INF] Executing endpoint 'NetflixTitles.API.Controllers.AuthenticationController.Authenticate (NetflixTitles.API)'
+2022-08-03 19:55:53.356 -07:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] Authenticate(AuthenticationRequestBody) on controller NetflixTitles.API.Controllers.AuthenticationController (NetflixTitles.API).
+2022-08-03 19:55:53.358 -07:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-08-03 19:55:53.358 -07:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-08-03 19:55:53.359 -07:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-08-03 19:55:53.360 -07:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-08-03 19:55:53.360 -07:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-08-03 19:55:53.361 -07:00 [DBG] Executing controller factory for controller NetflixTitles.API.Controllers.AuthenticationController (NetflixTitles.API)
+2022-08-03 19:55:53.907 -07:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2022-08-03 19:55:54.964 -07:00 [INF] Entity Framework Core 6.0.6 initialized 'netflix_appContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.1' with options: MaxPoolSize=1024 ServerVersion 8.0.29-mysql 
+2022-08-03 19:55:55.187 -07:00 [DBG] Executed controller factory for controller NetflixTitles.API.Controllers.AuthenticationController (NetflixTitles.API)
+2022-08-03 19:55:55.196 -07:00 [DBG] Attempting to bind parameter 'authenticationRequestBody' of type 'NetflixTitles.API.Controllers.AuthenticationController+AuthenticationRequestBody' ...
+2022-08-03 19:55:55.201 -07:00 [DBG] Attempting to bind parameter 'authenticationRequestBody' of type 'NetflixTitles.API.Controllers.AuthenticationController+AuthenticationRequestBody' using the name '' in request data ...
+2022-08-03 19:55:55.202 -07:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2022-08-03 19:55:55.204 -07:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2022-08-03 19:55:55.214 -07:00 [DBG] Connection id "0HMJLOJC0KH54", Request id "0HMJLOJC0KH54:00000002": started reading request body.
+2022-08-03 19:55:55.215 -07:00 [DBG] Connection id "0HMJLOJC0KH54", Request id "0HMJLOJC0KH54:00000002": done reading request body.
+2022-08-03 19:55:55.370 -07:00 [DBG] Done attempting to bind parameter 'authenticationRequestBody' of type 'NetflixTitles.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2022-08-03 19:55:55.370 -07:00 [DBG] Done attempting to bind parameter 'authenticationRequestBody' of type 'NetflixTitles.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2022-08-03 19:55:55.370 -07:00 [DBG] Attempting to validate the bound parameter 'authenticationRequestBody' of type 'NetflixTitles.API.Controllers.AuthenticationController+AuthenticationRequestBody' ...
+2022-08-03 19:55:55.393 -07:00 [DBG] Done attempting to validate the bound parameter 'authenticationRequestBody' of type 'NetflixTitles.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2022-08-03 19:55:55.516 -07:00 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .Where(u => u.UserName == __userName_0)
+    .Include(u => u.Lists)
+    .ThenInclude(l => l.TitleLists)
+    .ThenInclude(tl => tl.Title)
+    .FirstOrDefault()'
+2022-08-03 19:55:55.576 -07:00 [DBG] Including navigation: 'User.Lists'.
+2022-08-03 19:55:55.613 -07:00 [DBG] Including navigation: 'List.TitleLists'.
+2022-08-03 19:55:55.622 -07:00 [DBG] Including navigation: 'TitleList.Title'.
+2022-08-03 19:55:55.940 -07:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2022-08-03 19:55:55.964 -07:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: new SingleQueryingEnumerable<User>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Client Projections:
+                0 -> Dictionary<IProperty, int> { [Property: User.UserId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.DateCreated (DateTime?) ValueGenerated.OnAdd, 1], [Property: User.Email (string) Required MaxLength(255), 2], [Property: User.Password (string) Required MaxLength(255), 3], [Property: User.UserName (string) Required MaxLength(255), 4], [Property: User.UserType (string) ValueGenerated.OnAdd, 5] }
+                1 -> 0
+                2 -> Dictionary<IProperty, int> { [Property: List.ListId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 6], [Property: List.ListName (string) Required MaxLength(255), 7], [Property: List.UserId (int?) FK Index, 8] }
+                3 -> 6
+                4 -> Dictionary<IProperty, int> { [Property: TitleList.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 9], [Property: TitleList.ListId (int?) FK Index, 10], [Property: TitleList.TitleId (int?) FK Index, 11], [Property: TitleList.UserRating (int?), 12], [Property: TitleList.Watched (bool?) ValueGenerated.OnAdd, 13] }
+                5 -> Dictionary<IProperty, int> { [Property: Title.TitleId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 14], [Property: Title.Cast (string), 15], [Property: Title.Country (string) MaxLength(255), 16], [Property: Title.DateAdded (DateOnly?), 17], [Property: Title.Description (string) Required, 18], [Property: Title.Director (string) MaxLength(255), 19], [Property: Title.Duration (string) MaxLength(255), 20], [Property: Title.ListedIn (string) Required MaxLength(255), 21], [Property: Title.Rating (string) MaxLength(255), 22], [Property: Title.ReleaseYear (short?), 23], [Property: Title.TitleName (string) Required MaxLength(255), 24], [Property: Title.Type (string), 25], [Property: Title.UserRating (int?), 26], [Property: Title.Watched (bool?) ValueGenerated.OnAdd, 27] }
+                6 -> 9
+                7 -> 14
+            SELECT t.user_id, t.date_created, t.email, t.password, t.user_name, t.user_type, t2.list_id, t2.list_name, t2.user_id, t2.id, t2.list_id0, t2.title_id, t2.UserRating, t2.Watched, t2.title_id0, t2.cast, t2.country, t2.date_added, t2.description, t2.director, t2.duration, t2.listed_in, t2.rating, t2.release_year, t2.title_name, t2.type, t2.user_rating, t2.watched0
+            FROM 
+            (
+                SELECT TOP(1) u.user_id, u.date_created, u.email, u.password, u.user_name, u.user_type
+                FROM users AS u
+                WHERE u.user_name == @__userName_0
+            ) AS t
+            LEFT JOIN 
+            (
+                SELECT l.list_id, l.list_name, l.user_id, t1.id, t1.list_id AS list_id0, t1.title_id, t1.UserRating, t1.Watched, t1.title_id0, t1.cast, t1.country, t1.date_added, t1.description, t1.director, t1.duration, t1.listed_in, t1.rating, t1.release_year, t1.title_name, t1.type, t1.user_rating, t1.watched0
+                FROM lists AS l
+                LEFT JOIN 
+                (
+                    SELECT t0.id, t0.list_id, t0.title_id, t0.UserRating, t0.Watched, t3.title_id AS title_id0, t3.cast, t3.country, t3.date_added, t3.description, t3.director, t3.duration, t3.listed_in, t3.rating, t3.release_year, t3.title_name, t3.type, t3.user_rating, t3.watched AS watched0
+                    FROM title_lists AS t0
+                    LEFT JOIN titles AS t3 ON t0.title_id == t3.title_id
+                ) AS t1 ON l.list_id == t1.list_id
+            ) AS t2 ON t.user_id == t2.user_id
+            ORDER BY t.user_id ASC, t2.list_id ASC, t2.id ASC), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+        NetflixTitles.API.DbContexts.netflix_appContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2022-08-03 19:55:56.021 -07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-08-03 19:55:56.033 -07:00 [DBG] Created DbCommand for 'ExecuteReader' (7ms).
+2022-08-03 19:55:56.062 -07:00 [DBG] Opening connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:55:56.699 -07:00 [DBG] Opened connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:55:56.728 -07:00 [DBG] Executing DbCommand [Parameters=[@__userName_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`user_id`, `t`.`date_created`, `t`.`email`, `t`.`password`, `t`.`user_name`, `t`.`user_type`, `t2`.`list_id`, `t2`.`list_name`, `t2`.`user_id`, `t2`.`id`, `t2`.`list_id0`, `t2`.`title_id`, `t2`.`UserRating`, `t2`.`Watched`, `t2`.`title_id0`, `t2`.`cast`, `t2`.`country`, `t2`.`date_added`, `t2`.`description`, `t2`.`director`, `t2`.`duration`, `t2`.`listed_in`, `t2`.`rating`, `t2`.`release_year`, `t2`.`title_name`, `t2`.`type`, `t2`.`user_rating`, `t2`.`watched0`
+FROM (
+    SELECT `u`.`user_id`, `u`.`date_created`, `u`.`email`, `u`.`password`, `u`.`user_name`, `u`.`user_type`
+    FROM `users` AS `u`
+    WHERE `u`.`user_name` = @__userName_0
+    LIMIT 1
+) AS `t`
+LEFT JOIN (
+    SELECT `l`.`list_id`, `l`.`list_name`, `l`.`user_id`, `t1`.`id`, `t1`.`list_id` AS `list_id0`, `t1`.`title_id`, `t1`.`UserRating`, `t1`.`Watched`, `t1`.`title_id0`, `t1`.`cast`, `t1`.`country`, `t1`.`date_added`, `t1`.`description`, `t1`.`director`, `t1`.`duration`, `t1`.`listed_in`, `t1`.`rating`, `t1`.`release_year`, `t1`.`title_name`, `t1`.`type`, `t1`.`user_rating`, `t1`.`watched0`
+    FROM `lists` AS `l`
+    LEFT JOIN (
+        SELECT `t0`.`id`, `t0`.`list_id`, `t0`.`title_id`, `t0`.`UserRating`, `t0`.`Watched`, `t3`.`title_id` AS `title_id0`, `t3`.`cast`, `t3`.`country`, `t3`.`date_added`, `t3`.`description`, `t3`.`director`, `t3`.`duration`, `t3`.`listed_in`, `t3`.`rating`, `t3`.`release_year`, `t3`.`title_name`, `t3`.`type`, `t3`.`user_rating`, `t3`.`watched` AS `watched0`
+        FROM `title_lists` AS `t0`
+        LEFT JOIN `titles` AS `t3` ON `t0`.`title_id` = `t3`.`title_id`
+    ) AS `t1` ON `l`.`list_id` = `t1`.`list_id`
+) AS `t2` ON `t`.`user_id` = `t2`.`user_id`
+ORDER BY `t`.`user_id`, `t2`.`list_id`, `t2`.`id`
+2022-08-03 19:55:56.823 -07:00 [INF] Executed DbCommand (107ms) [Parameters=[@__userName_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`user_id`, `t`.`date_created`, `t`.`email`, `t`.`password`, `t`.`user_name`, `t`.`user_type`, `t2`.`list_id`, `t2`.`list_name`, `t2`.`user_id`, `t2`.`id`, `t2`.`list_id0`, `t2`.`title_id`, `t2`.`UserRating`, `t2`.`Watched`, `t2`.`title_id0`, `t2`.`cast`, `t2`.`country`, `t2`.`date_added`, `t2`.`description`, `t2`.`director`, `t2`.`duration`, `t2`.`listed_in`, `t2`.`rating`, `t2`.`release_year`, `t2`.`title_name`, `t2`.`type`, `t2`.`user_rating`, `t2`.`watched0`
+FROM (
+    SELECT `u`.`user_id`, `u`.`date_created`, `u`.`email`, `u`.`password`, `u`.`user_name`, `u`.`user_type`
+    FROM `users` AS `u`
+    WHERE `u`.`user_name` = @__userName_0
+    LIMIT 1
+) AS `t`
+LEFT JOIN (
+    SELECT `l`.`list_id`, `l`.`list_name`, `l`.`user_id`, `t1`.`id`, `t1`.`list_id` AS `list_id0`, `t1`.`title_id`, `t1`.`UserRating`, `t1`.`Watched`, `t1`.`title_id0`, `t1`.`cast`, `t1`.`country`, `t1`.`date_added`, `t1`.`description`, `t1`.`director`, `t1`.`duration`, `t1`.`listed_in`, `t1`.`rating`, `t1`.`release_year`, `t1`.`title_name`, `t1`.`type`, `t1`.`user_rating`, `t1`.`watched0`
+    FROM `lists` AS `l`
+    LEFT JOIN (
+        SELECT `t0`.`id`, `t0`.`list_id`, `t0`.`title_id`, `t0`.`UserRating`, `t0`.`Watched`, `t3`.`title_id` AS `title_id0`, `t3`.`cast`, `t3`.`country`, `t3`.`date_added`, `t3`.`description`, `t3`.`director`, `t3`.`duration`, `t3`.`listed_in`, `t3`.`rating`, `t3`.`release_year`, `t3`.`title_name`, `t3`.`type`, `t3`.`user_rating`, `t3`.`watched` AS `watched0`
+        FROM `title_lists` AS `t0`
+        LEFT JOIN `titles` AS `t3` ON `t0`.`title_id` = `t3`.`title_id`
+    ) AS `t1` ON `l`.`list_id` = `t1`.`list_id`
+) AS `t2` ON `t`.`user_id` = `t2`.`user_id`
+ORDER BY `t`.`user_id`, `t2`.`list_id`, `t2`.`id`
+2022-08-03 19:55:56.884 -07:00 [DBG] Context 'netflix_appContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-08-03 19:55:56.928 -07:00 [DBG] Context 'netflix_appContext' started tracking 'List' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-08-03 19:55:56.950 -07:00 [DBG] Context 'netflix_appContext' started tracking 'TitleList' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-08-03 19:55:56.970 -07:00 [DBG] Context 'netflix_appContext' started tracking 'Title' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-08-03 19:55:57.001 -07:00 [DBG] Context 'netflix_appContext' started tracking 'TitleList' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-08-03 19:55:57.002 -07:00 [DBG] Context 'netflix_appContext' started tracking 'Title' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-08-03 19:55:57.003 -07:00 [DBG] Context 'netflix_appContext' started tracking 'TitleList' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-08-03 19:55:57.003 -07:00 [DBG] Context 'netflix_appContext' started tracking 'Title' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-08-03 19:55:57.003 -07:00 [DBG] Context 'netflix_appContext' started tracking 'TitleList' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-08-03 19:55:57.003 -07:00 [DBG] Context 'netflix_appContext' started tracking 'Title' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-08-03 19:55:57.003 -07:00 [DBG] Context 'netflix_appContext' started tracking 'TitleList' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-08-03 19:55:57.003 -07:00 [DBG] Context 'netflix_appContext' started tracking 'Title' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-08-03 19:55:57.019 -07:00 [DBG] A data reader was disposed.
+2022-08-03 19:55:57.023 -07:00 [DBG] Closing connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:55:57.024 -07:00 [DBG] Closed connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:55:57.176 -07:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2022-08-03 19:55:57.179 -07:00 [DBG] No information found on request to perform content negotiation.
+2022-08-03 19:55:57.179 -07:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-08-03 19:55:57.179 -07:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-08-03 19:55:57.180 -07:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2022-08-03 19:55:57.181 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2022-08-03 19:55:57.197 -07:00 [INF] Executed action NetflixTitles.API.Controllers.AuthenticationController.Authenticate (NetflixTitles.API) in 3831.7953ms
+2022-08-03 19:55:57.201 -07:00 [INF] Executed endpoint 'NetflixTitles.API.Controllers.AuthenticationController.Authenticate (NetflixTitles.API)'
+2022-08-03 19:55:57.205 -07:00 [DBG] Connection id "0HMJLOJC0KH54" completed keep alive response.
+2022-08-03 19:55:57.222 -07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7073/api/authentication/authenticate application/json 70 - 200 - text/plain;+charset=utf-8 4146.0833ms
+2022-08-03 19:57:16.323 -07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7073/api/lists - -
+2022-08-03 19:57:16.337 -07:00 [DBG] 1 candidate(s) found for the request path '/api/lists'
+2022-08-03 19:57:16.339 -07:00 [DBG] Endpoint 'NetflixTitles.API.Controllers.ListsController.GetLists (NetflixTitles.API)' with route pattern 'api/lists' is valid for the request path '/api/lists'
+2022-08-03 19:57:16.339 -07:00 [DBG] Request matched endpoint 'NetflixTitles.API.Controllers.ListsController.GetLists (NetflixTitles.API)'
+2022-08-03 19:57:16.359 -07:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-08-03 19:57:16.450 -07:00 [DBG] Successfully validated the token.
+2022-08-03 19:57:16.453 -07:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2022-08-03 19:57:16.464 -07:00 [DBG] Authorization was successful.
+2022-08-03 19:57:16.466 -07:00 [INF] Executing endpoint 'NetflixTitles.API.Controllers.ListsController.GetLists (NetflixTitles.API)'
+2022-08-03 19:57:16.483 -07:00 [INF] Route matched with {action = "GetLists", controller = "Lists"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[NetflixTitles.API.Models.ListWithoutTitlesDto]]] GetLists(System.String, System.String, Int32, Int32) on controller NetflixTitles.API.Controllers.ListsController (NetflixTitles.API).
+2022-08-03 19:57:16.484 -07:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-08-03 19:57:16.484 -07:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-08-03 19:57:16.484 -07:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-08-03 19:57:16.484 -07:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-08-03 19:57:16.485 -07:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-08-03 19:57:16.485 -07:00 [DBG] Executing controller factory for controller NetflixTitles.API.Controllers.ListsController (NetflixTitles.API)
+2022-08-03 19:57:16.488 -07:00 [DBG] Executed controller factory for controller NetflixTitles.API.Controllers.ListsController (NetflixTitles.API)
+2022-08-03 19:57:16.489 -07:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2022-08-03 19:57:16.490 -07:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2022-08-03 19:57:16.491 -07:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2022-08-03 19:57:16.492 -07:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2022-08-03 19:57:16.492 -07:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2022-08-03 19:57:16.492 -07:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2022-08-03 19:57:16.493 -07:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2022-08-03 19:57:16.493 -07:00 [DBG] Attempting to bind parameter 'searchQuery' of type 'System.String' ...
+2022-08-03 19:57:16.494 -07:00 [DBG] Attempting to bind parameter 'searchQuery' of type 'System.String' using the name '' in request data ...
+2022-08-03 19:57:16.494 -07:00 [DBG] Could not find a value in the request with name '' for binding parameter 'searchQuery' of type 'System.String'.
+2022-08-03 19:57:16.494 -07:00 [DBG] Done attempting to bind parameter 'searchQuery' of type 'System.String'.
+2022-08-03 19:57:16.494 -07:00 [DBG] Done attempting to bind parameter 'searchQuery' of type 'System.String'.
+2022-08-03 19:57:16.494 -07:00 [DBG] Attempting to validate the bound parameter 'searchQuery' of type 'System.String' ...
+2022-08-03 19:57:16.494 -07:00 [DBG] Done attempting to validate the bound parameter 'searchQuery' of type 'System.String'.
+2022-08-03 19:57:16.494 -07:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2022-08-03 19:57:16.494 -07:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2022-08-03 19:57:16.494 -07:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2022-08-03 19:57:16.494 -07:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2022-08-03 19:57:16.494 -07:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2022-08-03 19:57:16.494 -07:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2022-08-03 19:57:16.495 -07:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2022-08-03 19:57:16.495 -07:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2022-08-03 19:57:16.495 -07:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2022-08-03 19:57:16.495 -07:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2022-08-03 19:57:16.495 -07:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2022-08-03 19:57:16.495 -07:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2022-08-03 19:57:16.495 -07:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2022-08-03 19:57:16.495 -07:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2022-08-03 19:57:16.515 -07:00 [DBG] Compiling query expression: 
+'DbSet<List>()
+    .Where(l => l.UserId.ToString() == __claimId_0)
+    .Include(l => l.User)
+    .Count()'
+2022-08-03 19:57:16.546 -07:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<int>(
+    asyncEnumerable: new SingleQueryingEnumerable<int>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT COUNT(*)
+            FROM lists AS l
+            WHERE CAST(l.user_id AS longtext) == @__claimId_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, int>, 
+        NetflixTitles.API.DbContexts.netflix_appContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2022-08-03 19:57:16.566 -07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-08-03 19:57:16.566 -07:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2022-08-03 19:57:16.568 -07:00 [DBG] Opening connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:57:16.731 -07:00 [DBG] Opened connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:57:16.758 -07:00 [DBG] Executing DbCommand [Parameters=[@__claimId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `lists` AS `l`
+WHERE CAST(`l`.`user_id` AS char) = @__claimId_0
+2022-08-03 19:57:16.904 -07:00 [INF] Executed DbCommand (165ms) [Parameters=[@__claimId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `lists` AS `l`
+WHERE CAST(`l`.`user_id` AS char) = @__claimId_0
+2022-08-03 19:57:17.045 -07:00 [DBG] A data reader was disposed.
+2022-08-03 19:57:17.074 -07:00 [DBG] Closing connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:57:17.078 -07:00 [DBG] Closed connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:57:17.147 -07:00 [DBG] Compiling query expression: 
+'DbSet<List>()
+    .Where(l => l.UserId.ToString() == __claimId_0)
+    .Include(l => l.User)
+    .OrderBy(l => l.ListName)
+    .Skip(__p_1)
+    .Take(__p_2)'
+2022-08-03 19:57:17.160 -07:00 [DBG] Including navigation: 'List.User'.
+2022-08-03 19:57:17.189 -07:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<List>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: List.ListId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: List.ListName (string) Required MaxLength(255), 1], [Property: List.UserId (int?) FK Index, 2] }
+            1 -> Dictionary<IProperty, int> { [Property: User.UserId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 3], [Property: User.DateCreated (DateTime?) ValueGenerated.OnAdd, 4], [Property: User.Email (string) Required MaxLength(255), 5], [Property: User.Password (string) Required MaxLength(255), 6], [Property: User.UserName (string) Required MaxLength(255), 7], [Property: User.UserType (string) ValueGenerated.OnAdd, 8] }
+        SELECT t.list_id, t.list_name, t.user_id, u.user_id, u.date_created, u.email, u.password, u.user_name, u.user_type
+        FROM 
+        (
+            SELECT l.list_id, l.list_name, l.user_id
+            FROM lists AS l
+            WHERE CAST(l.user_id AS longtext) == @__claimId_0
+            ORDER BY l.list_name ASC
+            OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+        ) AS t
+        LEFT JOIN users AS u ON t.user_id == u.user_id
+        ORDER BY t.list_name ASC), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, List>, 
+    NetflixTitles.API.DbContexts.netflix_appContext, 
+    False, 
+    False, 
+    True
+)'
+2022-08-03 19:57:17.193 -07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-08-03 19:57:17.193 -07:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2022-08-03 19:57:17.193 -07:00 [DBG] Opening connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:57:17.221 -07:00 [DBG] Opened connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:57:17.222 -07:00 [DBG] Executing DbCommand [Parameters=[@__claimId_0='?' (Size = 4000), @__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`list_id`, `t`.`list_name`, `t`.`user_id`, `u`.`user_id`, `u`.`date_created`, `u`.`email`, `u`.`password`, `u`.`user_name`, `u`.`user_type`
+FROM (
+    SELECT `l`.`list_id`, `l`.`list_name`, `l`.`user_id`
+    FROM `lists` AS `l`
+    WHERE CAST(`l`.`user_id` AS char) = @__claimId_0
+    ORDER BY `l`.`list_name`
+    LIMIT @__p_2 OFFSET @__p_1
+) AS `t`
+LEFT JOIN `users` AS `u` ON `t`.`user_id` = `u`.`user_id`
+ORDER BY `t`.`list_name`
+2022-08-03 19:57:17.284 -07:00 [INF] Executed DbCommand (63ms) [Parameters=[@__claimId_0='?' (Size = 4000), @__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`list_id`, `t`.`list_name`, `t`.`user_id`, `u`.`user_id`, `u`.`date_created`, `u`.`email`, `u`.`password`, `u`.`user_name`, `u`.`user_type`
+FROM (
+    SELECT `l`.`list_id`, `l`.`list_name`, `l`.`user_id`
+    FROM `lists` AS `l`
+    WHERE CAST(`l`.`user_id` AS char) = @__claimId_0
+    ORDER BY `l`.`list_name`
+    LIMIT @__p_2 OFFSET @__p_1
+) AS `t`
+LEFT JOIN `users` AS `u` ON `t`.`user_id` = `u`.`user_id`
+ORDER BY `t`.`list_name`
+2022-08-03 19:57:17.287 -07:00 [DBG] Context 'netflix_appContext' started tracking 'List' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-08-03 19:57:17.288 -07:00 [DBG] Context 'netflix_appContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-08-03 19:57:17.292 -07:00 [DBG] A data reader was disposed.
+2022-08-03 19:57:17.292 -07:00 [DBG] Closing connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:57:17.292 -07:00 [DBG] Closed connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:57:17.346 -07:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2022-08-03 19:57:17.347 -07:00 [DBG] No information found on request to perform content negotiation.
+2022-08-03 19:57:17.347 -07:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-08-03 19:57:17.347 -07:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-08-03 19:57:17.347 -07:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-08-03 19:57:17.347 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetflixTitles.API.Models.ListWithoutTitlesDto, NetflixTitles.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-03 19:57:17.417 -07:00 [INF] Executed action NetflixTitles.API.Controllers.ListsController.GetLists (NetflixTitles.API) in 932.0805ms
+2022-08-03 19:57:17.417 -07:00 [INF] Executed endpoint 'NetflixTitles.API.Controllers.ListsController.GetLists (NetflixTitles.API)'
+2022-08-03 19:57:17.418 -07:00 [DBG] Connection id "0HMJLOJC0KH54" completed keep alive response.
+2022-08-03 19:57:17.420 -07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7073/api/lists - - - 200 73 application/json;+charset=utf-8 1099.4961ms
+2022-08-03 19:57:42.403 -07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7073/api/lists application/json 32
+2022-08-03 19:57:42.406 -07:00 [DBG] 1 candidate(s) found for the request path '/api/lists'
+2022-08-03 19:57:42.407 -07:00 [DBG] Endpoint 'NetflixTitles.API.Controllers.ListsController.CreateList (NetflixTitles.API)' with route pattern 'api/lists' is valid for the request path '/api/lists'
+2022-08-03 19:57:42.407 -07:00 [DBG] Request matched endpoint 'NetflixTitles.API.Controllers.ListsController.CreateList (NetflixTitles.API)'
+2022-08-03 19:57:42.408 -07:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-08-03 19:57:42.424 -07:00 [DBG] Successfully validated the token.
+2022-08-03 19:57:42.424 -07:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2022-08-03 19:57:42.427 -07:00 [DBG] Authorization was successful.
+2022-08-03 19:57:42.428 -07:00 [INF] Executing endpoint 'NetflixTitles.API.Controllers.ListsController.CreateList (NetflixTitles.API)'
+2022-08-03 19:57:42.438 -07:00 [INF] Route matched with {action = "CreateList", controller = "Lists"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NetflixTitles.API.Models.ListDto]] CreateList(NetflixTitles.API.Models.ListForCreationDto) on controller NetflixTitles.API.Controllers.ListsController (NetflixTitles.API).
+2022-08-03 19:57:42.438 -07:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-08-03 19:57:42.438 -07:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-08-03 19:57:42.438 -07:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-08-03 19:57:42.438 -07:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-08-03 19:57:42.438 -07:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-08-03 19:57:42.439 -07:00 [DBG] Executing controller factory for controller NetflixTitles.API.Controllers.ListsController (NetflixTitles.API)
+2022-08-03 19:57:42.442 -07:00 [DBG] Executed controller factory for controller NetflixTitles.API.Controllers.ListsController (NetflixTitles.API)
+2022-08-03 19:57:42.443 -07:00 [DBG] Attempting to bind parameter 'listForCreationDto' of type 'NetflixTitles.API.Models.ListForCreationDto' ...
+2022-08-03 19:57:42.443 -07:00 [DBG] Attempting to bind parameter 'listForCreationDto' of type 'NetflixTitles.API.Models.ListForCreationDto' using the name '' in request data ...
+2022-08-03 19:57:42.444 -07:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2022-08-03 19:57:42.444 -07:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2022-08-03 19:57:42.445 -07:00 [DBG] Connection id "0HMJLOJC0KH54", Request id "0HMJLOJC0KH54:00000004": started reading request body.
+2022-08-03 19:57:42.445 -07:00 [DBG] Connection id "0HMJLOJC0KH54", Request id "0HMJLOJC0KH54:00000004": done reading request body.
+2022-08-03 19:57:42.454 -07:00 [DBG] Done attempting to bind parameter 'listForCreationDto' of type 'NetflixTitles.API.Models.ListForCreationDto'.
+2022-08-03 19:57:42.455 -07:00 [DBG] Done attempting to bind parameter 'listForCreationDto' of type 'NetflixTitles.API.Models.ListForCreationDto'.
+2022-08-03 19:57:42.455 -07:00 [DBG] Attempting to validate the bound parameter 'listForCreationDto' of type 'NetflixTitles.API.Models.ListForCreationDto' ...
+2022-08-03 19:57:42.460 -07:00 [DBG] Done attempting to validate the bound parameter 'listForCreationDto' of type 'NetflixTitles.API.Models.ListForCreationDto'.
+2022-08-03 19:57:42.508 -07:00 [DBG] 'netflix_appContext' generated a temporary value for the property 'ListId.List'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-08-03 19:57:42.522 -07:00 [DBG] Context 'netflix_appContext' started tracking 'List' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-08-03 19:57:42.527 -07:00 [DBG] SaveChanges starting for 'netflix_appContext'.
+2022-08-03 19:57:42.530 -07:00 [DBG] DetectChanges starting for 'netflix_appContext'.
+2022-08-03 19:57:42.539 -07:00 [DBG] DetectChanges completed for 'netflix_appContext'.
+2022-08-03 19:57:42.556 -07:00 [DBG] Opening connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:57:42.891 -07:00 [DBG] Opened connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:57:42.982 -07:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2022-08-03 19:57:43.104 -07:00 [DBG] Began transaction with isolation level 'Unspecified'.
+2022-08-03 19:57:43.186 -07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-08-03 19:57:43.186 -07:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2022-08-03 19:57:43.188 -07:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 255), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `lists` (`list_name`, `user_id`)
+VALUES (@p0, @p1);
+SELECT `list_id`
+FROM `lists`
+WHERE ROW_COUNT() = 1 AND `list_id` = LAST_INSERT_ID();
+2022-08-03 19:57:43.204 -07:00 [INF] Executed DbCommand (16ms) [Parameters=[@p0='?' (Size = 255), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `lists` (`list_name`, `user_id`)
+VALUES (@p0, @p1);
+SELECT `list_id`
+FROM `lists`
+WHERE ROW_COUNT() = 1 AND `list_id` = LAST_INSERT_ID();
+2022-08-03 19:57:43.226 -07:00 [DBG] The foreign key property 'List.ListId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2022-08-03 19:57:43.235 -07:00 [DBG] A data reader was disposed.
+2022-08-03 19:57:43.239 -07:00 [DBG] Committing transaction.
+2022-08-03 19:57:43.248 -07:00 [DBG] Committed transaction.
+2022-08-03 19:57:43.251 -07:00 [DBG] Closing connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:57:43.251 -07:00 [DBG] Closed connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:57:43.254 -07:00 [DBG] Disposing transaction.
+2022-08-03 19:57:43.268 -07:00 [DBG] An entity of type 'List' tracked by 'netflix_appContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-08-03 19:57:43.271 -07:00 [DBG] SaveChanges completed for 'netflix_appContext' with 1 entities written to the database.
+2022-08-03 19:57:43.283 -07:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2022-08-03 19:57:43.283 -07:00 [DBG] No information found on request to perform content negotiation.
+2022-08-03 19:57:43.283 -07:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-08-03 19:57:43.283 -07:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-08-03 19:57:43.283 -07:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-08-03 19:57:43.283 -07:00 [INF] Executing CreatedAtRouteResult, writing value of type 'NetflixTitles.API.Models.ListDto'.
+2022-08-03 19:57:43.310 -07:00 [DBG] Found the endpoints ["NetflixTitles.API.Controllers.ListsController.GetList (NetflixTitles.API)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2022-08-03 19:57:43.323 -07:00 [DBG] Successfully processed template api/lists/{id} for NetflixTitles.API.Controllers.ListsController.GetList (NetflixTitles.API) resulting in /api/lists/20 and 
+2022-08-03 19:57:43.326 -07:00 [DBG] Link generation succeeded for endpoints ["NetflixTitles.API.Controllers.ListsController.GetList (NetflixTitles.API)"] with result /api/lists/20
+2022-08-03 19:57:43.338 -07:00 [INF] Executed action NetflixTitles.API.Controllers.ListsController.CreateList (NetflixTitles.API) in 899.6762ms
+2022-08-03 19:57:43.338 -07:00 [INF] Executed endpoint 'NetflixTitles.API.Controllers.ListsController.CreateList (NetflixTitles.API)'
+2022-08-03 19:57:43.339 -07:00 [DBG] Connection id "0HMJLOJC0KH54" completed keep alive response.
+2022-08-03 19:57:43.339 -07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7073/api/lists application/json 32 - 201 83 application/json;+charset=utf-8 936.9073ms
+2022-08-03 19:57:47.001 -07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7073/api/lists application/json 32
+2022-08-03 19:57:47.003 -07:00 [DBG] 1 candidate(s) found for the request path '/api/lists'
+2022-08-03 19:57:47.004 -07:00 [DBG] Endpoint 'NetflixTitles.API.Controllers.ListsController.CreateList (NetflixTitles.API)' with route pattern 'api/lists' is valid for the request path '/api/lists'
+2022-08-03 19:57:47.004 -07:00 [DBG] Request matched endpoint 'NetflixTitles.API.Controllers.ListsController.CreateList (NetflixTitles.API)'
+2022-08-03 19:57:47.005 -07:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-08-03 19:57:47.007 -07:00 [DBG] Successfully validated the token.
+2022-08-03 19:57:47.007 -07:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2022-08-03 19:57:47.011 -07:00 [DBG] Authorization was successful.
+2022-08-03 19:57:47.011 -07:00 [INF] Executing endpoint 'NetflixTitles.API.Controllers.ListsController.CreateList (NetflixTitles.API)'
+2022-08-03 19:57:47.012 -07:00 [INF] Route matched with {action = "CreateList", controller = "Lists"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NetflixTitles.API.Models.ListDto]] CreateList(NetflixTitles.API.Models.ListForCreationDto) on controller NetflixTitles.API.Controllers.ListsController (NetflixTitles.API).
+2022-08-03 19:57:47.013 -07:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-08-03 19:57:47.013 -07:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-08-03 19:57:47.013 -07:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-08-03 19:57:47.013 -07:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-08-03 19:57:47.013 -07:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-08-03 19:57:47.013 -07:00 [DBG] Executing controller factory for controller NetflixTitles.API.Controllers.ListsController (NetflixTitles.API)
+2022-08-03 19:57:47.014 -07:00 [DBG] Executed controller factory for controller NetflixTitles.API.Controllers.ListsController (NetflixTitles.API)
+2022-08-03 19:57:47.014 -07:00 [DBG] Attempting to bind parameter 'listForCreationDto' of type 'NetflixTitles.API.Models.ListForCreationDto' ...
+2022-08-03 19:57:47.014 -07:00 [DBG] Attempting to bind parameter 'listForCreationDto' of type 'NetflixTitles.API.Models.ListForCreationDto' using the name '' in request data ...
+2022-08-03 19:57:47.014 -07:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2022-08-03 19:57:47.015 -07:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2022-08-03 19:57:47.015 -07:00 [DBG] Connection id "0HMJLOJC0KH54", Request id "0HMJLOJC0KH54:00000005": started reading request body.
+2022-08-03 19:57:47.015 -07:00 [DBG] Connection id "0HMJLOJC0KH54", Request id "0HMJLOJC0KH54:00000005": done reading request body.
+2022-08-03 19:57:47.017 -07:00 [DBG] Done attempting to bind parameter 'listForCreationDto' of type 'NetflixTitles.API.Models.ListForCreationDto'.
+2022-08-03 19:57:47.017 -07:00 [DBG] Done attempting to bind parameter 'listForCreationDto' of type 'NetflixTitles.API.Models.ListForCreationDto'.
+2022-08-03 19:57:47.018 -07:00 [DBG] Attempting to validate the bound parameter 'listForCreationDto' of type 'NetflixTitles.API.Models.ListForCreationDto' ...
+2022-08-03 19:57:47.019 -07:00 [DBG] Done attempting to validate the bound parameter 'listForCreationDto' of type 'NetflixTitles.API.Models.ListForCreationDto'.
+2022-08-03 19:57:47.025 -07:00 [DBG] 'netflix_appContext' generated a temporary value for the property 'ListId.List'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-08-03 19:57:47.026 -07:00 [DBG] Context 'netflix_appContext' started tracking 'List' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-08-03 19:57:47.027 -07:00 [DBG] SaveChanges starting for 'netflix_appContext'.
+2022-08-03 19:57:47.027 -07:00 [DBG] DetectChanges starting for 'netflix_appContext'.
+2022-08-03 19:57:47.028 -07:00 [DBG] DetectChanges completed for 'netflix_appContext'.
+2022-08-03 19:57:47.029 -07:00 [DBG] Opening connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:57:47.031 -07:00 [DBG] Opened connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:57:47.032 -07:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2022-08-03 19:57:47.137 -07:00 [DBG] Began transaction with isolation level 'Unspecified'.
+2022-08-03 19:57:47.155 -07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-08-03 19:57:47.155 -07:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2022-08-03 19:57:47.156 -07:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 255), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `lists` (`list_name`, `user_id`)
+VALUES (@p0, @p1);
+SELECT `list_id`
+FROM `lists`
+WHERE ROW_COUNT() = 1 AND `list_id` = LAST_INSERT_ID();
+2022-08-03 19:57:47.161 -07:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 255), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `lists` (`list_name`, `user_id`)
+VALUES (@p0, @p1);
+SELECT `list_id`
+FROM `lists`
+WHERE ROW_COUNT() = 1 AND `list_id` = LAST_INSERT_ID();
+2022-08-03 19:57:47.165 -07:00 [DBG] The foreign key property 'List.ListId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2022-08-03 19:57:47.166 -07:00 [DBG] A data reader was disposed.
+2022-08-03 19:57:47.166 -07:00 [DBG] Committing transaction.
+2022-08-03 19:57:47.221 -07:00 [DBG] Committed transaction.
+2022-08-03 19:57:47.222 -07:00 [DBG] Closing connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:57:47.222 -07:00 [DBG] Closed connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:57:47.223 -07:00 [DBG] Disposing transaction.
+2022-08-03 19:57:47.226 -07:00 [DBG] An entity of type 'List' tracked by 'netflix_appContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-08-03 19:57:47.226 -07:00 [DBG] SaveChanges completed for 'netflix_appContext' with 1 entities written to the database.
+2022-08-03 19:57:47.228 -07:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2022-08-03 19:57:47.228 -07:00 [DBG] No information found on request to perform content negotiation.
+2022-08-03 19:57:47.228 -07:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-08-03 19:57:47.228 -07:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-08-03 19:57:47.229 -07:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-08-03 19:57:47.229 -07:00 [INF] Executing CreatedAtRouteResult, writing value of type 'NetflixTitles.API.Models.ListDto'.
+2022-08-03 19:57:47.230 -07:00 [DBG] Found the endpoints ["NetflixTitles.API.Controllers.ListsController.GetList (NetflixTitles.API)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2022-08-03 19:57:47.232 -07:00 [DBG] Successfully processed template api/lists/{id} for NetflixTitles.API.Controllers.ListsController.GetList (NetflixTitles.API) resulting in /api/lists/21 and 
+2022-08-03 19:57:47.232 -07:00 [DBG] Link generation succeeded for endpoints ["NetflixTitles.API.Controllers.ListsController.GetList (NetflixTitles.API)"] with result /api/lists/21
+2022-08-03 19:57:47.236 -07:00 [INF] Executed action NetflixTitles.API.Controllers.ListsController.CreateList (NetflixTitles.API) in 222.4517ms
+2022-08-03 19:57:47.236 -07:00 [INF] Executed endpoint 'NetflixTitles.API.Controllers.ListsController.CreateList (NetflixTitles.API)'
+2022-08-03 19:57:47.236 -07:00 [DBG] Connection id "0HMJLOJC0KH54" completed keep alive response.
+2022-08-03 19:57:47.236 -07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7073/api/lists application/json 32 - 201 83 application/json;+charset=utf-8 236.8012ms
+2022-08-03 19:57:48.997 -07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7073/api/lists application/json 32
+2022-08-03 19:57:48.998 -07:00 [DBG] 1 candidate(s) found for the request path '/api/lists'
+2022-08-03 19:57:48.999 -07:00 [DBG] Endpoint 'NetflixTitles.API.Controllers.ListsController.CreateList (NetflixTitles.API)' with route pattern 'api/lists' is valid for the request path '/api/lists'
+2022-08-03 19:57:49.000 -07:00 [DBG] Request matched endpoint 'NetflixTitles.API.Controllers.ListsController.CreateList (NetflixTitles.API)'
+2022-08-03 19:57:49.001 -07:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-08-03 19:57:49.013 -07:00 [DBG] Successfully validated the token.
+2022-08-03 19:57:49.014 -07:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2022-08-03 19:57:49.015 -07:00 [DBG] Authorization was successful.
+2022-08-03 19:57:49.015 -07:00 [INF] Executing endpoint 'NetflixTitles.API.Controllers.ListsController.CreateList (NetflixTitles.API)'
+2022-08-03 19:57:49.016 -07:00 [INF] Route matched with {action = "CreateList", controller = "Lists"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NetflixTitles.API.Models.ListDto]] CreateList(NetflixTitles.API.Models.ListForCreationDto) on controller NetflixTitles.API.Controllers.ListsController (NetflixTitles.API).
+2022-08-03 19:57:49.017 -07:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-08-03 19:57:49.017 -07:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-08-03 19:57:49.017 -07:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-08-03 19:57:49.017 -07:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-08-03 19:57:49.017 -07:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-08-03 19:57:49.017 -07:00 [DBG] Executing controller factory for controller NetflixTitles.API.Controllers.ListsController (NetflixTitles.API)
+2022-08-03 19:57:49.018 -07:00 [DBG] Executed controller factory for controller NetflixTitles.API.Controllers.ListsController (NetflixTitles.API)
+2022-08-03 19:57:49.021 -07:00 [DBG] Attempting to bind parameter 'listForCreationDto' of type 'NetflixTitles.API.Models.ListForCreationDto' ...
+2022-08-03 19:57:49.021 -07:00 [DBG] Attempting to bind parameter 'listForCreationDto' of type 'NetflixTitles.API.Models.ListForCreationDto' using the name '' in request data ...
+2022-08-03 19:57:49.022 -07:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2022-08-03 19:57:49.022 -07:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2022-08-03 19:57:49.022 -07:00 [DBG] Connection id "0HMJLOJC0KH54", Request id "0HMJLOJC0KH54:00000006": started reading request body.
+2022-08-03 19:57:49.023 -07:00 [DBG] Connection id "0HMJLOJC0KH54", Request id "0HMJLOJC0KH54:00000006": done reading request body.
+2022-08-03 19:57:49.024 -07:00 [DBG] Done attempting to bind parameter 'listForCreationDto' of type 'NetflixTitles.API.Models.ListForCreationDto'.
+2022-08-03 19:57:49.024 -07:00 [DBG] Done attempting to bind parameter 'listForCreationDto' of type 'NetflixTitles.API.Models.ListForCreationDto'.
+2022-08-03 19:57:49.024 -07:00 [DBG] Attempting to validate the bound parameter 'listForCreationDto' of type 'NetflixTitles.API.Models.ListForCreationDto' ...
+2022-08-03 19:57:49.024 -07:00 [DBG] Done attempting to validate the bound parameter 'listForCreationDto' of type 'NetflixTitles.API.Models.ListForCreationDto'.
+2022-08-03 19:57:49.025 -07:00 [DBG] 'netflix_appContext' generated a temporary value for the property 'ListId.List'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-08-03 19:57:49.025 -07:00 [DBG] Context 'netflix_appContext' started tracking 'List' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-08-03 19:57:49.026 -07:00 [DBG] SaveChanges starting for 'netflix_appContext'.
+2022-08-03 19:57:49.026 -07:00 [DBG] DetectChanges starting for 'netflix_appContext'.
+2022-08-03 19:57:49.026 -07:00 [DBG] DetectChanges completed for 'netflix_appContext'.
+2022-08-03 19:57:49.026 -07:00 [DBG] Opening connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:57:49.028 -07:00 [DBG] Opened connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:57:49.028 -07:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2022-08-03 19:57:49.118 -07:00 [DBG] Began transaction with isolation level 'Unspecified'.
+2022-08-03 19:57:49.218 -07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-08-03 19:57:49.267 -07:00 [DBG] Created DbCommand for 'ExecuteReader' (48ms).
+2022-08-03 19:57:49.270 -07:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 255), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `lists` (`list_name`, `user_id`)
+VALUES (@p0, @p1);
+SELECT `list_id`
+FROM `lists`
+WHERE ROW_COUNT() = 1 AND `list_id` = LAST_INSERT_ID();
+2022-08-03 19:57:49.404 -07:00 [INF] Executed DbCommand (134ms) [Parameters=[@p0='?' (Size = 255), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `lists` (`list_name`, `user_id`)
+VALUES (@p0, @p1);
+SELECT `list_id`
+FROM `lists`
+WHERE ROW_COUNT() = 1 AND `list_id` = LAST_INSERT_ID();
+2022-08-03 19:57:49.406 -07:00 [DBG] The foreign key property 'List.ListId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2022-08-03 19:57:49.406 -07:00 [DBG] A data reader was disposed.
+2022-08-03 19:57:49.406 -07:00 [DBG] Committing transaction.
+2022-08-03 19:57:49.436 -07:00 [DBG] Committed transaction.
+2022-08-03 19:57:49.437 -07:00 [DBG] Closing connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:57:49.437 -07:00 [DBG] Closed connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:57:49.438 -07:00 [DBG] Disposing transaction.
+2022-08-03 19:57:49.438 -07:00 [DBG] An entity of type 'List' tracked by 'netflix_appContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-08-03 19:57:49.439 -07:00 [DBG] SaveChanges completed for 'netflix_appContext' with 1 entities written to the database.
+2022-08-03 19:57:49.440 -07:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2022-08-03 19:57:49.440 -07:00 [DBG] No information found on request to perform content negotiation.
+2022-08-03 19:57:49.440 -07:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-08-03 19:57:49.440 -07:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-08-03 19:57:49.440 -07:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-08-03 19:57:49.440 -07:00 [INF] Executing CreatedAtRouteResult, writing value of type 'NetflixTitles.API.Models.ListDto'.
+2022-08-03 19:57:49.441 -07:00 [DBG] Found the endpoints ["NetflixTitles.API.Controllers.ListsController.GetList (NetflixTitles.API)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2022-08-03 19:57:49.442 -07:00 [DBG] Successfully processed template api/lists/{id} for NetflixTitles.API.Controllers.ListsController.GetList (NetflixTitles.API) resulting in /api/lists/22 and 
+2022-08-03 19:57:49.443 -07:00 [DBG] Link generation succeeded for endpoints ["NetflixTitles.API.Controllers.ListsController.GetList (NetflixTitles.API)"] with result /api/lists/22
+2022-08-03 19:57:49.445 -07:00 [INF] Executed action NetflixTitles.API.Controllers.ListsController.CreateList (NetflixTitles.API) in 427.8188ms
+2022-08-03 19:57:49.445 -07:00 [INF] Executed endpoint 'NetflixTitles.API.Controllers.ListsController.CreateList (NetflixTitles.API)'
+2022-08-03 19:57:49.445 -07:00 [DBG] Connection id "0HMJLOJC0KH54" completed keep alive response.
+2022-08-03 19:57:49.447 -07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7073/api/lists application/json 32 - 201 83 application/json;+charset=utf-8 449.5163ms
+2022-08-03 19:57:51.921 -07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7073/api/lists - -
+2022-08-03 19:57:51.927 -07:00 [DBG] 1 candidate(s) found for the request path '/api/lists'
+2022-08-03 19:57:51.928 -07:00 [DBG] Endpoint 'NetflixTitles.API.Controllers.ListsController.GetLists (NetflixTitles.API)' with route pattern 'api/lists' is valid for the request path '/api/lists'
+2022-08-03 19:57:51.928 -07:00 [DBG] Request matched endpoint 'NetflixTitles.API.Controllers.ListsController.GetLists (NetflixTitles.API)'
+2022-08-03 19:57:51.929 -07:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-08-03 19:57:51.941 -07:00 [DBG] Successfully validated the token.
+2022-08-03 19:57:51.942 -07:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2022-08-03 19:57:51.944 -07:00 [DBG] Authorization was successful.
+2022-08-03 19:57:51.944 -07:00 [INF] Executing endpoint 'NetflixTitles.API.Controllers.ListsController.GetLists (NetflixTitles.API)'
+2022-08-03 19:57:51.945 -07:00 [INF] Route matched with {action = "GetLists", controller = "Lists"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[NetflixTitles.API.Models.ListWithoutTitlesDto]]] GetLists(System.String, System.String, Int32, Int32) on controller NetflixTitles.API.Controllers.ListsController (NetflixTitles.API).
+2022-08-03 19:57:51.945 -07:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-08-03 19:57:51.945 -07:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-08-03 19:57:51.945 -07:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-08-03 19:57:51.946 -07:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-08-03 19:57:51.946 -07:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-08-03 19:57:51.946 -07:00 [DBG] Executing controller factory for controller NetflixTitles.API.Controllers.ListsController (NetflixTitles.API)
+2022-08-03 19:57:51.946 -07:00 [DBG] Executed controller factory for controller NetflixTitles.API.Controllers.ListsController (NetflixTitles.API)
+2022-08-03 19:57:51.946 -07:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2022-08-03 19:57:51.946 -07:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2022-08-03 19:57:51.946 -07:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2022-08-03 19:57:51.946 -07:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2022-08-03 19:57:51.947 -07:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2022-08-03 19:57:51.947 -07:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2022-08-03 19:57:51.947 -07:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2022-08-03 19:57:51.947 -07:00 [DBG] Attempting to bind parameter 'searchQuery' of type 'System.String' ...
+2022-08-03 19:57:51.947 -07:00 [DBG] Attempting to bind parameter 'searchQuery' of type 'System.String' using the name '' in request data ...
+2022-08-03 19:57:51.947 -07:00 [DBG] Could not find a value in the request with name '' for binding parameter 'searchQuery' of type 'System.String'.
+2022-08-03 19:57:51.947 -07:00 [DBG] Done attempting to bind parameter 'searchQuery' of type 'System.String'.
+2022-08-03 19:57:51.947 -07:00 [DBG] Done attempting to bind parameter 'searchQuery' of type 'System.String'.
+2022-08-03 19:57:51.947 -07:00 [DBG] Attempting to validate the bound parameter 'searchQuery' of type 'System.String' ...
+2022-08-03 19:57:51.947 -07:00 [DBG] Done attempting to validate the bound parameter 'searchQuery' of type 'System.String'.
+2022-08-03 19:57:51.947 -07:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2022-08-03 19:57:51.947 -07:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2022-08-03 19:57:51.947 -07:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2022-08-03 19:57:51.947 -07:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2022-08-03 19:57:51.947 -07:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2022-08-03 19:57:51.947 -07:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2022-08-03 19:57:51.947 -07:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2022-08-03 19:57:51.947 -07:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2022-08-03 19:57:51.947 -07:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2022-08-03 19:57:51.947 -07:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2022-08-03 19:57:51.947 -07:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2022-08-03 19:57:51.947 -07:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2022-08-03 19:57:51.947 -07:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2022-08-03 19:57:51.947 -07:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2022-08-03 19:57:51.958 -07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-08-03 19:57:51.958 -07:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2022-08-03 19:57:51.959 -07:00 [DBG] Opening connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:57:52.068 -07:00 [DBG] Opened connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:57:52.120 -07:00 [DBG] Executing DbCommand [Parameters=[@__claimId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `lists` AS `l`
+WHERE CAST(`l`.`user_id` AS char) = @__claimId_0
+2022-08-03 19:57:52.167 -07:00 [INF] Executed DbCommand (94ms) [Parameters=[@__claimId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `lists` AS `l`
+WHERE CAST(`l`.`user_id` AS char) = @__claimId_0
+2022-08-03 19:57:52.170 -07:00 [DBG] A data reader was disposed.
+2022-08-03 19:57:52.171 -07:00 [DBG] Closing connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:57:52.171 -07:00 [DBG] Closed connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:57:52.183 -07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-08-03 19:57:52.183 -07:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2022-08-03 19:57:52.184 -07:00 [DBG] Opening connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:57:52.185 -07:00 [DBG] Opened connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:57:52.186 -07:00 [DBG] Executing DbCommand [Parameters=[@__claimId_0='?' (Size = 4000), @__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`list_id`, `t`.`list_name`, `t`.`user_id`, `u`.`user_id`, `u`.`date_created`, `u`.`email`, `u`.`password`, `u`.`user_name`, `u`.`user_type`
+FROM (
+    SELECT `l`.`list_id`, `l`.`list_name`, `l`.`user_id`
+    FROM `lists` AS `l`
+    WHERE CAST(`l`.`user_id` AS char) = @__claimId_0
+    ORDER BY `l`.`list_name`
+    LIMIT @__p_2 OFFSET @__p_1
+) AS `t`
+LEFT JOIN `users` AS `u` ON `t`.`user_id` = `u`.`user_id`
+ORDER BY `t`.`list_name`
+2022-08-03 19:57:52.210 -07:00 [INF] Executed DbCommand (24ms) [Parameters=[@__claimId_0='?' (Size = 4000), @__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`list_id`, `t`.`list_name`, `t`.`user_id`, `u`.`user_id`, `u`.`date_created`, `u`.`email`, `u`.`password`, `u`.`user_name`, `u`.`user_type`
+FROM (
+    SELECT `l`.`list_id`, `l`.`list_name`, `l`.`user_id`
+    FROM `lists` AS `l`
+    WHERE CAST(`l`.`user_id` AS char) = @__claimId_0
+    ORDER BY `l`.`list_name`
+    LIMIT @__p_2 OFFSET @__p_1
+) AS `t`
+LEFT JOIN `users` AS `u` ON `t`.`user_id` = `u`.`user_id`
+ORDER BY `t`.`list_name`
+2022-08-03 19:57:52.212 -07:00 [DBG] Context 'netflix_appContext' started tracking 'List' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-08-03 19:57:52.213 -07:00 [DBG] Context 'netflix_appContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-08-03 19:57:52.214 -07:00 [DBG] Context 'netflix_appContext' started tracking 'List' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-08-03 19:57:52.214 -07:00 [DBG] Context 'netflix_appContext' started tracking 'List' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-08-03 19:57:52.215 -07:00 [DBG] Context 'netflix_appContext' started tracking 'List' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-08-03 19:57:52.215 -07:00 [DBG] A data reader was disposed.
+2022-08-03 19:57:52.215 -07:00 [DBG] Closing connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:57:52.219 -07:00 [DBG] Closed connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:57:52.222 -07:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2022-08-03 19:57:52.223 -07:00 [DBG] No information found on request to perform content negotiation.
+2022-08-03 19:57:52.223 -07:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-08-03 19:57:52.223 -07:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-08-03 19:57:52.223 -07:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-08-03 19:57:52.223 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetflixTitles.API.Models.ListWithoutTitlesDto, NetflixTitles.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-03 19:57:52.225 -07:00 [INF] Executed action NetflixTitles.API.Controllers.ListsController.GetLists (NetflixTitles.API) in 279.3537ms
+2022-08-03 19:57:52.225 -07:00 [INF] Executed endpoint 'NetflixTitles.API.Controllers.ListsController.GetLists (NetflixTitles.API)'
+2022-08-03 19:57:52.225 -07:00 [DBG] Connection id "0HMJLOJC0KH54" completed keep alive response.
+2022-08-03 19:57:52.226 -07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7073/api/lists - - - 200 289 application/json;+charset=utf-8 305.1783ms
+2022-08-03 19:58:07.576 -07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7073/api/lists?pageSize=2 - -
+2022-08-03 19:58:07.577 -07:00 [DBG] 1 candidate(s) found for the request path '/api/lists'
+2022-08-03 19:58:07.577 -07:00 [DBG] Endpoint 'NetflixTitles.API.Controllers.ListsController.GetLists (NetflixTitles.API)' with route pattern 'api/lists' is valid for the request path '/api/lists'
+2022-08-03 19:58:07.577 -07:00 [DBG] Request matched endpoint 'NetflixTitles.API.Controllers.ListsController.GetLists (NetflixTitles.API)'
+2022-08-03 19:58:07.578 -07:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-08-03 19:58:07.582 -07:00 [DBG] Successfully validated the token.
+2022-08-03 19:58:07.582 -07:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2022-08-03 19:58:07.583 -07:00 [DBG] Authorization was successful.
+2022-08-03 19:58:07.583 -07:00 [INF] Executing endpoint 'NetflixTitles.API.Controllers.ListsController.GetLists (NetflixTitles.API)'
+2022-08-03 19:58:07.584 -07:00 [INF] Route matched with {action = "GetLists", controller = "Lists"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[NetflixTitles.API.Models.ListWithoutTitlesDto]]] GetLists(System.String, System.String, Int32, Int32) on controller NetflixTitles.API.Controllers.ListsController (NetflixTitles.API).
+2022-08-03 19:58:07.584 -07:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-08-03 19:58:07.584 -07:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-08-03 19:58:07.585 -07:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-08-03 19:58:07.585 -07:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-08-03 19:58:07.585 -07:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-08-03 19:58:07.585 -07:00 [DBG] Executing controller factory for controller NetflixTitles.API.Controllers.ListsController (NetflixTitles.API)
+2022-08-03 19:58:07.585 -07:00 [DBG] Executed controller factory for controller NetflixTitles.API.Controllers.ListsController (NetflixTitles.API)
+2022-08-03 19:58:07.608 -07:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2022-08-03 19:58:07.610 -07:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2022-08-03 19:58:07.610 -07:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2022-08-03 19:58:07.610 -07:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2022-08-03 19:58:07.610 -07:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2022-08-03 19:58:07.610 -07:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2022-08-03 19:58:07.610 -07:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2022-08-03 19:58:07.611 -07:00 [DBG] Attempting to bind parameter 'searchQuery' of type 'System.String' ...
+2022-08-03 19:58:07.611 -07:00 [DBG] Attempting to bind parameter 'searchQuery' of type 'System.String' using the name '' in request data ...
+2022-08-03 19:58:07.611 -07:00 [DBG] Could not find a value in the request with name '' for binding parameter 'searchQuery' of type 'System.String'.
+2022-08-03 19:58:07.611 -07:00 [DBG] Done attempting to bind parameter 'searchQuery' of type 'System.String'.
+2022-08-03 19:58:07.611 -07:00 [DBG] Done attempting to bind parameter 'searchQuery' of type 'System.String'.
+2022-08-03 19:58:07.611 -07:00 [DBG] Attempting to validate the bound parameter 'searchQuery' of type 'System.String' ...
+2022-08-03 19:58:07.611 -07:00 [DBG] Done attempting to validate the bound parameter 'searchQuery' of type 'System.String'.
+2022-08-03 19:58:07.611 -07:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2022-08-03 19:58:07.611 -07:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2022-08-03 19:58:07.611 -07:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2022-08-03 19:58:07.611 -07:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2022-08-03 19:58:07.611 -07:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2022-08-03 19:58:07.611 -07:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2022-08-03 19:58:07.611 -07:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2022-08-03 19:58:07.611 -07:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2022-08-03 19:58:07.611 -07:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name 'pageSize' in request data ...
+2022-08-03 19:58:07.614 -07:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2022-08-03 19:58:07.614 -07:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2022-08-03 19:58:07.614 -07:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2022-08-03 19:58:07.615 -07:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2022-08-03 19:58:07.617 -07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-08-03 19:58:07.617 -07:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2022-08-03 19:58:07.618 -07:00 [DBG] Opening connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:58:07.670 -07:00 [DBG] Opened connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:58:07.671 -07:00 [DBG] Executing DbCommand [Parameters=[@__claimId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `lists` AS `l`
+WHERE CAST(`l`.`user_id` AS char) = @__claimId_0
+2022-08-03 19:58:07.674 -07:00 [INF] Executed DbCommand (3ms) [Parameters=[@__claimId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `lists` AS `l`
+WHERE CAST(`l`.`user_id` AS char) = @__claimId_0
+2022-08-03 19:58:07.675 -07:00 [DBG] A data reader was disposed.
+2022-08-03 19:58:07.675 -07:00 [DBG] Closing connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:58:07.675 -07:00 [DBG] Closed connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:58:07.677 -07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-08-03 19:58:07.677 -07:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2022-08-03 19:58:07.677 -07:00 [DBG] Opening connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:58:07.758 -07:00 [DBG] Opened connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:58:07.765 -07:00 [DBG] Executing DbCommand [Parameters=[@__claimId_0='?' (Size = 4000), @__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`list_id`, `t`.`list_name`, `t`.`user_id`, `u`.`user_id`, `u`.`date_created`, `u`.`email`, `u`.`password`, `u`.`user_name`, `u`.`user_type`
+FROM (
+    SELECT `l`.`list_id`, `l`.`list_name`, `l`.`user_id`
+    FROM `lists` AS `l`
+    WHERE CAST(`l`.`user_id` AS char) = @__claimId_0
+    ORDER BY `l`.`list_name`
+    LIMIT @__p_2 OFFSET @__p_1
+) AS `t`
+LEFT JOIN `users` AS `u` ON `t`.`user_id` = `u`.`user_id`
+ORDER BY `t`.`list_name`
+2022-08-03 19:58:07.788 -07:00 [INF] Executed DbCommand (27ms) [Parameters=[@__claimId_0='?' (Size = 4000), @__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`list_id`, `t`.`list_name`, `t`.`user_id`, `u`.`user_id`, `u`.`date_created`, `u`.`email`, `u`.`password`, `u`.`user_name`, `u`.`user_type`
+FROM (
+    SELECT `l`.`list_id`, `l`.`list_name`, `l`.`user_id`
+    FROM `lists` AS `l`
+    WHERE CAST(`l`.`user_id` AS char) = @__claimId_0
+    ORDER BY `l`.`list_name`
+    LIMIT @__p_2 OFFSET @__p_1
+) AS `t`
+LEFT JOIN `users` AS `u` ON `t`.`user_id` = `u`.`user_id`
+ORDER BY `t`.`list_name`
+2022-08-03 19:58:07.789 -07:00 [DBG] Context 'netflix_appContext' started tracking 'List' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-08-03 19:58:07.790 -07:00 [DBG] Context 'netflix_appContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-08-03 19:58:07.792 -07:00 [DBG] Context 'netflix_appContext' started tracking 'List' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-08-03 19:58:07.792 -07:00 [DBG] A data reader was disposed.
+2022-08-03 19:58:07.792 -07:00 [DBG] Closing connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:58:07.792 -07:00 [DBG] Closed connection to database 'netflix_app' on server 'localhost'.
+2022-08-03 19:58:07.793 -07:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2022-08-03 19:58:07.793 -07:00 [DBG] No information found on request to perform content negotiation.
+2022-08-03 19:58:07.793 -07:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-08-03 19:58:07.793 -07:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-08-03 19:58:07.793 -07:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-08-03 19:58:07.793 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetflixTitles.API.Models.ListWithoutTitlesDto, NetflixTitles.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-03 19:58:07.796 -07:00 [INF] Executed action NetflixTitles.API.Controllers.ListsController.GetLists (NetflixTitles.API) in 210.6749ms
+2022-08-03 19:58:07.796 -07:00 [INF] Executed endpoint 'NetflixTitles.API.Controllers.ListsController.GetLists (NetflixTitles.API)'
+2022-08-03 19:58:07.796 -07:00 [DBG] Connection id "0HMJLOJC0KH54" completed keep alive response.
+2022-08-03 19:58:07.796 -07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7073/api/lists?pageSize=2 - - - 200 145 application/json;+charset=utf-8 220.9385ms

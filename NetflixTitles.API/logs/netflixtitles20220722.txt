@@ -1,0 +1,820 @@
+2022-07-22 12:34:59.195 -07:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-07-22 12:34:59.377 -07:00 [DBG] Hosting starting
+2022-07-22 12:34:59.418 -07:00 [INF] User profile is available. Using '/Users/chandlerpotter/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-07-22 12:34:59.428 -07:00 [DBG] Reading data from file '/Users/chandlerpotter/.aspnet/DataProtection-Keys/key-2c2b681e-5d66-4926-8d25-12ef831d143a.xml'.
+2022-07-22 12:34:59.458 -07:00 [DBG] Found key {2c2b681e-5d66-4926-8d25-12ef831d143a}.
+2022-07-22 12:34:59.481 -07:00 [DBG] Considering key {2c2b681e-5d66-4926-8d25-12ef831d143a} with expiration date 2022-08-30 02:56:11Z as default key.
+2022-07-22 12:34:59.488 -07:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2022-07-22 12:34:59.499 -07:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2022-07-22 12:34:59.500 -07:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2022-07-22 12:34:59.514 -07:00 [DBG] Using key {2c2b681e-5d66-4926-8d25-12ef831d143a} as the default key.
+2022-07-22 12:34:59.516 -07:00 [DBG] Key ring with default key {2c2b681e-5d66-4926-8d25-12ef831d143a} was loaded during application startup.
+2022-07-22 12:34:59.754 -07:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 8E52971A6A589C1DFB045CCF462DA2B18BE72287)
+2022-07-22 12:34:59.876 -07:00 [INF] Now listening on: https://localhost:7073
+2022-07-22 12:34:59.876 -07:00 [INF] Now listening on: http://localhost:5170
+2022-07-22 12:34:59.878 -07:00 [DBG] Loaded hosting startup assembly NetflixTitles.API
+2022-07-22 12:34:59.880 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-22 12:34:59.881 -07:00 [INF] Hosting environment: Development
+2022-07-22 12:34:59.881 -07:00 [INF] Content root path: /Users/chandlerpotter/Projects/NetflixTitles/NetflixTitles.API/
+2022-07-22 12:34:59.881 -07:00 [DBG] Hosting started
+2022-07-22 12:37:15.797 -07:00 [DBG] Connection id "0HMJC36AHN2V3" received FIN.
+2022-07-22 12:37:15.843 -07:00 [DBG] Connection id "0HMJC36AHN2V3" accepted.
+2022-07-22 12:37:15.846 -07:00 [DBG] Connection id "0HMJC36AHN2V3" started.
+2022-07-22 12:37:15.856 -07:00 [DBG] Connection id "0HMJC36AHN2V4" accepted.
+2022-07-22 12:37:15.857 -07:00 [DBG] Connection id "0HMJC36AHN2V4" started.
+2022-07-22 12:37:15.901 -07:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-07-22 12:37:16.090 -07:00 [DBG] Connection id "0HMJC36AHN2V3" stopped.
+2022-07-22 12:37:16.120 -07:00 [DBG] Connection id "0HMJC36AHN2V3" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-07-22 12:37:16.160 -07:00 [DBG] Connection 0HMJC36AHN2V4 established using the following protocol: "Tls12"
+2022-07-22 12:37:16.228 -07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7073/api/authentication/authenticate/register application/json 123
+2022-07-22 12:37:16.232 -07:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-07-22 12:37:16.314 -07:00 [DBG] No candidates found for the request path '/api/authentication/authenticate/register'
+2022-07-22 12:37:16.317 -07:00 [DBG] Request did not match any endpoints
+2022-07-22 12:37:16.355 -07:00 [DBG] POST requests are not supported
+2022-07-22 12:37:16.421 -07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-07-22 12:37:16.431 -07:00 [DBG] Connection id "0HMJC36AHN2V4" completed keep alive response.
+2022-07-22 12:37:16.437 -07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7073/api/authentication/authenticate/register application/json 123 - 404 0 - 212.2623ms
+2022-07-22 12:37:16.438 -07:00 [DBG] Connection id "0HMJC36AHN2V4", Request id "0HMJC36AHN2V4:00000002": started reading request body.
+2022-07-22 12:37:16.440 -07:00 [DBG] Connection id "0HMJC36AHN2V4", Request id "0HMJC36AHN2V4:00000002": done reading request body.
+2022-07-22 12:37:42.188 -07:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-07-22 12:37:42.355 -07:00 [DBG] Hosting starting
+2022-07-22 12:37:42.387 -07:00 [INF] User profile is available. Using '/Users/chandlerpotter/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-07-22 12:37:42.396 -07:00 [DBG] Reading data from file '/Users/chandlerpotter/.aspnet/DataProtection-Keys/key-2c2b681e-5d66-4926-8d25-12ef831d143a.xml'.
+2022-07-22 12:37:42.421 -07:00 [DBG] Found key {2c2b681e-5d66-4926-8d25-12ef831d143a}.
+2022-07-22 12:37:42.442 -07:00 [DBG] Considering key {2c2b681e-5d66-4926-8d25-12ef831d143a} with expiration date 2022-08-30 02:56:11Z as default key.
+2022-07-22 12:37:42.449 -07:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2022-07-22 12:37:42.459 -07:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2022-07-22 12:37:42.460 -07:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2022-07-22 12:37:42.473 -07:00 [DBG] Using key {2c2b681e-5d66-4926-8d25-12ef831d143a} as the default key.
+2022-07-22 12:37:42.475 -07:00 [DBG] Key ring with default key {2c2b681e-5d66-4926-8d25-12ef831d143a} was loaded during application startup.
+2022-07-22 12:37:42.681 -07:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 8E52971A6A589C1DFB045CCF462DA2B18BE72287)
+2022-07-22 12:37:42.960 -07:00 [INF] Now listening on: https://localhost:7073
+2022-07-22 12:37:42.964 -07:00 [INF] Now listening on: http://localhost:5170
+2022-07-22 12:37:42.965 -07:00 [DBG] Loaded hosting startup assembly NetflixTitles.API
+2022-07-22 12:37:42.969 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-22 12:37:42.971 -07:00 [INF] Hosting environment: Development
+2022-07-22 12:37:42.971 -07:00 [INF] Content root path: /Users/chandlerpotter/Projects/NetflixTitles/NetflixTitles.API/
+2022-07-22 12:37:42.971 -07:00 [DBG] Hosting started
+2022-07-22 12:37:52.102 -07:00 [DBG] Connection id "0HMJC36LBUI1H" received FIN.
+2022-07-22 12:37:52.120 -07:00 [DBG] Connection id "0HMJC36LBUI1H" accepted.
+2022-07-22 12:37:52.122 -07:00 [DBG] Connection id "0HMJC36LBUI1H" started.
+2022-07-22 12:37:52.129 -07:00 [DBG] Connection id "0HMJC36LBUI1I" accepted.
+2022-07-22 12:37:52.156 -07:00 [DBG] Connection id "0HMJC36LBUI1I" started.
+2022-07-22 12:37:52.201 -07:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-07-22 12:37:52.415 -07:00 [DBG] Connection id "0HMJC36LBUI1H" stopped.
+2022-07-22 12:37:52.445 -07:00 [DBG] Connection id "0HMJC36LBUI1H" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-07-22 12:37:52.496 -07:00 [DBG] Connection 0HMJC36LBUI1I established using the following protocol: "Tls12"
+2022-07-22 12:37:52.564 -07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7073/api/authentication/register application/json 123
+2022-07-22 12:37:52.568 -07:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-07-22 12:37:52.662 -07:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/register'
+2022-07-22 12:37:52.671 -07:00 [DBG] Endpoint 'NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API)' with route pattern 'api/authentication/register' is valid for the request path '/api/authentication/register'
+2022-07-22 12:37:52.674 -07:00 [DBG] Request matched endpoint 'NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API)'
+2022-07-22 12:37:52.706 -07:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-07-22 12:37:52.768 -07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-07-22 12:37:52.772 -07:00 [INF] Executing endpoint 'NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API)'
+2022-07-22 12:37:52.826 -07:00 [INF] Route matched with {action = "RegisterUser", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] RegisterUser(NetflixTitles.API.Models.RegisterUserDto) on controller NetflixTitles.API.Controllers.AuthenticationController (NetflixTitles.API).
+2022-07-22 12:37:52.830 -07:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-07-22 12:37:52.830 -07:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-07-22 12:37:52.832 -07:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-07-22 12:37:52.832 -07:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-07-22 12:37:52.832 -07:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-07-22 12:37:52.834 -07:00 [DBG] Executing controller factory for controller NetflixTitles.API.Controllers.AuthenticationController (NetflixTitles.API)
+2022-07-22 12:37:53.318 -07:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2022-07-22 12:37:54.307 -07:00 [INF] Entity Framework Core 6.0.6 initialized 'netflix_appContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.1' with options: MaxPoolSize=1024 ServerVersion 8.0.29-mysql 
+2022-07-22 12:37:54.526 -07:00 [DBG] Executed controller factory for controller NetflixTitles.API.Controllers.AuthenticationController (NetflixTitles.API)
+2022-07-22 12:37:54.535 -07:00 [DBG] Attempting to bind parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto' ...
+2022-07-22 12:37:54.539 -07:00 [DBG] Attempting to bind parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto' using the name '' in request data ...
+2022-07-22 12:37:54.541 -07:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2022-07-22 12:37:54.543 -07:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2022-07-22 12:37:54.551 -07:00 [DBG] Connection id "0HMJC36LBUI1I", Request id "0HMJC36LBUI1I:00000002": started reading request body.
+2022-07-22 12:37:54.552 -07:00 [DBG] Connection id "0HMJC36LBUI1I", Request id "0HMJC36LBUI1I:00000002": done reading request body.
+2022-07-22 12:37:54.715 -07:00 [DBG] Done attempting to bind parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto'.
+2022-07-22 12:37:54.715 -07:00 [DBG] Done attempting to bind parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto'.
+2022-07-22 12:37:54.715 -07:00 [DBG] Attempting to validate the bound parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto' ...
+2022-07-22 12:37:54.736 -07:00 [DBG] Done attempting to validate the bound parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto'.
+2022-07-22 12:38:19.909 -07:00 [DBG] 'netflix_appContext' generated a temporary value for the property 'UserId.User'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-07-22 12:38:19.987 -07:00 [DBG] Context 'netflix_appContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-07-22 12:38:19.993 -07:00 [DBG] SaveChanges starting for 'netflix_appContext'.
+2022-07-22 12:38:19.999 -07:00 [DBG] DetectChanges starting for 'netflix_appContext'.
+2022-07-22 12:38:20.011 -07:00 [DBG] DetectChanges completed for 'netflix_appContext'.
+2022-07-22 12:38:20.041 -07:00 [DBG] Opening connection to database 'netflix_app' on server 'localhost'.
+2022-07-22 12:38:20.666 -07:00 [DBG] Opened connection to database 'netflix_app' on server 'localhost'.
+2022-07-22 12:38:20.671 -07:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2022-07-22 12:38:20.793 -07:00 [DBG] Began transaction with isolation level 'Unspecified'.
+2022-07-22 12:38:20.868 -07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-07-22 12:38:20.875 -07:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2022-07-22 12:38:20.907 -07:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 255), @p1='?' (Size = 255), @p2='?' (Size = 255), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `users` (`email`, `password`, `user_name`, `user_type`)
+VALUES (@p0, @p1, @p2, @p3);
+SELECT `user_id`, `date_created`
+FROM `users`
+WHERE ROW_COUNT() = 1 AND `user_id` = LAST_INSERT_ID();
+2022-07-22 12:38:20.986 -07:00 [INF] Executed DbCommand (79ms) [Parameters=[@p0='?' (Size = 255), @p1='?' (Size = 255), @p2='?' (Size = 255), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `users` (`email`, `password`, `user_name`, `user_type`)
+VALUES (@p0, @p1, @p2, @p3);
+SELECT `user_id`, `date_created`
+FROM `users`
+WHERE ROW_COUNT() = 1 AND `user_id` = LAST_INSERT_ID();
+2022-07-22 12:38:21.022 -07:00 [DBG] The foreign key property 'User.UserId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2022-07-22 12:38:21.033 -07:00 [DBG] A data reader was disposed.
+2022-07-22 12:38:21.038 -07:00 [DBG] Committing transaction.
+2022-07-22 12:38:21.050 -07:00 [DBG] Committed transaction.
+2022-07-22 12:38:21.055 -07:00 [DBG] Closing connection to database 'netflix_app' on server 'localhost'.
+2022-07-22 12:38:21.057 -07:00 [DBG] Closed connection to database 'netflix_app' on server 'localhost'.
+2022-07-22 12:38:21.060 -07:00 [DBG] Disposing transaction.
+2022-07-22 12:38:21.077 -07:00 [DBG] An entity of type 'User' tracked by 'netflix_appContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-07-22 12:38:21.080 -07:00 [DBG] SaveChanges completed for 'netflix_appContext' with 1 entities written to the database.
+2022-07-22 12:38:21.092 -07:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-07-22 12:38:21.099 -07:00 [INF] Executed action NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API) in 28261.9693ms
+2022-07-22 12:38:21.103 -07:00 [INF] Executed endpoint 'NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API)'
+2022-07-22 12:38:21.111 -07:00 [DBG] Connection id "0HMJC36LBUI1I" completed keep alive response.
+2022-07-22 12:38:21.126 -07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7073/api/authentication/register application/json 123 - 204 - - 28565.8393ms
+2022-07-22 12:41:13.773 -07:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-07-22 12:41:13.948 -07:00 [DBG] Hosting starting
+2022-07-22 12:41:13.982 -07:00 [INF] User profile is available. Using '/Users/chandlerpotter/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-07-22 12:41:13.992 -07:00 [DBG] Reading data from file '/Users/chandlerpotter/.aspnet/DataProtection-Keys/key-2c2b681e-5d66-4926-8d25-12ef831d143a.xml'.
+2022-07-22 12:41:14.019 -07:00 [DBG] Found key {2c2b681e-5d66-4926-8d25-12ef831d143a}.
+2022-07-22 12:41:14.039 -07:00 [DBG] Considering key {2c2b681e-5d66-4926-8d25-12ef831d143a} with expiration date 2022-08-30 02:56:11Z as default key.
+2022-07-22 12:41:14.046 -07:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2022-07-22 12:41:14.056 -07:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2022-07-22 12:41:14.056 -07:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2022-07-22 12:41:14.070 -07:00 [DBG] Using key {2c2b681e-5d66-4926-8d25-12ef831d143a} as the default key.
+2022-07-22 12:41:14.071 -07:00 [DBG] Key ring with default key {2c2b681e-5d66-4926-8d25-12ef831d143a} was loaded during application startup.
+2022-07-22 12:41:14.283 -07:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 8E52971A6A589C1DFB045CCF462DA2B18BE72287)
+2022-07-22 12:41:14.452 -07:00 [INF] Now listening on: https://localhost:7073
+2022-07-22 12:41:14.453 -07:00 [INF] Now listening on: http://localhost:5170
+2022-07-22 12:41:14.454 -07:00 [DBG] Loaded hosting startup assembly NetflixTitles.API
+2022-07-22 12:41:14.455 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-22 12:41:14.456 -07:00 [INF] Hosting environment: Development
+2022-07-22 12:41:14.456 -07:00 [INF] Content root path: /Users/chandlerpotter/Projects/NetflixTitles/NetflixTitles.API/
+2022-07-22 12:41:14.456 -07:00 [DBG] Hosting started
+2022-07-22 12:41:20.713 -07:00 [DBG] Connection id "0HMJC38JHDHFT" received FIN.
+2022-07-22 12:41:20.731 -07:00 [DBG] Connection id "0HMJC38JHDHFT" accepted.
+2022-07-22 12:41:20.734 -07:00 [DBG] Connection id "0HMJC38JHDHFT" started.
+2022-07-22 12:41:20.767 -07:00 [DBG] Connection id "0HMJC38JHDHFU" accepted.
+2022-07-22 12:41:20.768 -07:00 [DBG] Connection id "0HMJC38JHDHFU" started.
+2022-07-22 12:41:20.837 -07:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-07-22 12:41:20.876 -07:00 [DBG] Connection id "0HMJC38JHDHFT" stopped.
+2022-07-22 12:41:20.956 -07:00 [DBG] Connection id "0HMJC38JHDHFT" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-07-22 12:41:21.161 -07:00 [DBG] Connection 0HMJC38JHDHFU established using the following protocol: "Tls12"
+2022-07-22 12:41:21.230 -07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7073/api/authentication/register application/json 94
+2022-07-22 12:41:21.233 -07:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-07-22 12:41:21.306 -07:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/register'
+2022-07-22 12:41:21.315 -07:00 [DBG] Endpoint 'NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API)' with route pattern 'api/authentication/register' is valid for the request path '/api/authentication/register'
+2022-07-22 12:41:21.317 -07:00 [DBG] Request matched endpoint 'NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API)'
+2022-07-22 12:41:21.354 -07:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-07-22 12:41:21.415 -07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-07-22 12:41:21.420 -07:00 [INF] Executing endpoint 'NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API)'
+2022-07-22 12:41:21.475 -07:00 [INF] Route matched with {action = "RegisterUser", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] RegisterUser(NetflixTitles.API.Models.RegisterUserDto) on controller NetflixTitles.API.Controllers.AuthenticationController (NetflixTitles.API).
+2022-07-22 12:41:21.477 -07:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-07-22 12:41:21.478 -07:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-07-22 12:41:21.479 -07:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-07-22 12:41:21.480 -07:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-07-22 12:41:21.480 -07:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-07-22 12:41:21.481 -07:00 [DBG] Executing controller factory for controller NetflixTitles.API.Controllers.AuthenticationController (NetflixTitles.API)
+2022-07-22 12:41:21.918 -07:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2022-07-22 12:41:22.873 -07:00 [INF] Entity Framework Core 6.0.6 initialized 'netflix_appContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.1' with options: MaxPoolSize=1024 ServerVersion 8.0.29-mysql 
+2022-07-22 12:41:23.088 -07:00 [DBG] Executed controller factory for controller NetflixTitles.API.Controllers.AuthenticationController (NetflixTitles.API)
+2022-07-22 12:41:23.097 -07:00 [DBG] Attempting to bind parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto' ...
+2022-07-22 12:41:23.101 -07:00 [DBG] Attempting to bind parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto' using the name '' in request data ...
+2022-07-22 12:41:23.102 -07:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2022-07-22 12:41:23.104 -07:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2022-07-22 12:41:23.112 -07:00 [DBG] Connection id "0HMJC38JHDHFU", Request id "0HMJC38JHDHFU:00000002": started reading request body.
+2022-07-22 12:41:23.113 -07:00 [DBG] Connection id "0HMJC38JHDHFU", Request id "0HMJC38JHDHFU:00000002": done reading request body.
+2022-07-22 12:41:23.251 -07:00 [DBG] Done attempting to bind parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto'.
+2022-07-22 12:41:23.251 -07:00 [DBG] Done attempting to bind parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto'.
+2022-07-22 12:41:23.251 -07:00 [DBG] Attempting to validate the bound parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto' ...
+2022-07-22 12:41:23.269 -07:00 [DBG] Done attempting to validate the bound parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto'.
+2022-07-22 12:41:23.360 -07:00 [DBG] 'netflix_appContext' generated a temporary value for the property 'UserId.User'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-07-22 12:41:23.437 -07:00 [DBG] Context 'netflix_appContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-07-22 12:41:23.442 -07:00 [DBG] SaveChanges starting for 'netflix_appContext'.
+2022-07-22 12:41:23.448 -07:00 [DBG] DetectChanges starting for 'netflix_appContext'.
+2022-07-22 12:41:23.460 -07:00 [DBG] DetectChanges completed for 'netflix_appContext'.
+2022-07-22 12:41:23.488 -07:00 [DBG] Opening connection to database 'netflix_app' on server 'localhost'.
+2022-07-22 12:41:24.243 -07:00 [DBG] Opened connection to database 'netflix_app' on server 'localhost'.
+2022-07-22 12:41:24.252 -07:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2022-07-22 12:41:24.317 -07:00 [DBG] Began transaction with isolation level 'Unspecified'.
+2022-07-22 12:41:24.388 -07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-07-22 12:41:24.395 -07:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2022-07-22 12:41:24.429 -07:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 255), @p1='?' (Size = 255), @p2='?' (Size = 255), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `users` (`email`, `password`, `user_name`, `user_type`)
+VALUES (@p0, @p1, @p2, @p3);
+SELECT `user_id`, `date_created`
+FROM `users`
+WHERE ROW_COUNT() = 1 AND `user_id` = LAST_INSERT_ID();
+2022-07-22 12:41:24.557 -07:00 [INF] Executed DbCommand (125ms) [Parameters=[@p0='?' (Size = 255), @p1='?' (Size = 255), @p2='?' (Size = 255), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `users` (`email`, `password`, `user_name`, `user_type`)
+VALUES (@p0, @p1, @p2, @p3);
+SELECT `user_id`, `date_created`
+FROM `users`
+WHERE ROW_COUNT() = 1 AND `user_id` = LAST_INSERT_ID();
+2022-07-22 12:41:24.594 -07:00 [DBG] The foreign key property 'User.UserId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2022-07-22 12:41:24.605 -07:00 [DBG] A data reader was disposed.
+2022-07-22 12:41:24.611 -07:00 [DBG] Committing transaction.
+2022-07-22 12:41:24.692 -07:00 [DBG] Committed transaction.
+2022-07-22 12:41:24.698 -07:00 [DBG] Closing connection to database 'netflix_app' on server 'localhost'.
+2022-07-22 12:41:24.700 -07:00 [DBG] Closed connection to database 'netflix_app' on server 'localhost'.
+2022-07-22 12:41:24.703 -07:00 [DBG] Disposing transaction.
+2022-07-22 12:41:24.721 -07:00 [DBG] An entity of type 'User' tracked by 'netflix_appContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-07-22 12:41:24.724 -07:00 [DBG] SaveChanges completed for 'netflix_appContext' with 1 entities written to the database.
+2022-07-22 12:41:24.734 -07:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-07-22 12:41:24.741 -07:00 [INF] Executed action NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API) in 3255.9967ms
+2022-07-22 12:41:24.744 -07:00 [INF] Executed endpoint 'NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API)'
+2022-07-22 12:41:24.752 -07:00 [DBG] Connection id "0HMJC38JHDHFU" completed keep alive response.
+2022-07-22 12:41:24.769 -07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7073/api/authentication/register application/json 94 - 204 - - 3543.7843ms
+2022-07-22 12:42:09.714 -07:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-07-22 12:42:09.887 -07:00 [DBG] Hosting starting
+2022-07-22 12:42:09.919 -07:00 [INF] User profile is available. Using '/Users/chandlerpotter/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-07-22 12:42:09.927 -07:00 [DBG] Reading data from file '/Users/chandlerpotter/.aspnet/DataProtection-Keys/key-2c2b681e-5d66-4926-8d25-12ef831d143a.xml'.
+2022-07-22 12:42:09.954 -07:00 [DBG] Found key {2c2b681e-5d66-4926-8d25-12ef831d143a}.
+2022-07-22 12:42:09.975 -07:00 [DBG] Considering key {2c2b681e-5d66-4926-8d25-12ef831d143a} with expiration date 2022-08-30 02:56:11Z as default key.
+2022-07-22 12:42:09.981 -07:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2022-07-22 12:42:09.991 -07:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2022-07-22 12:42:09.992 -07:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2022-07-22 12:42:10.006 -07:00 [DBG] Using key {2c2b681e-5d66-4926-8d25-12ef831d143a} as the default key.
+2022-07-22 12:42:10.008 -07:00 [DBG] Key ring with default key {2c2b681e-5d66-4926-8d25-12ef831d143a} was loaded during application startup.
+2022-07-22 12:42:10.214 -07:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 8E52971A6A589C1DFB045CCF462DA2B18BE72287)
+2022-07-22 12:42:10.410 -07:00 [INF] Now listening on: https://localhost:7073
+2022-07-22 12:42:10.412 -07:00 [INF] Now listening on: http://localhost:5170
+2022-07-22 12:42:10.412 -07:00 [DBG] Loaded hosting startup assembly NetflixTitles.API
+2022-07-22 12:42:10.414 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-22 12:42:10.415 -07:00 [INF] Hosting environment: Development
+2022-07-22 12:42:10.415 -07:00 [INF] Content root path: /Users/chandlerpotter/Projects/NetflixTitles/NetflixTitles.API/
+2022-07-22 12:42:10.415 -07:00 [DBG] Hosting started
+2022-07-22 12:42:19.200 -07:00 [DBG] Connection id "0HMJC394V68J5" received FIN.
+2022-07-22 12:42:19.222 -07:00 [DBG] Connection id "0HMJC394V68J5" accepted.
+2022-07-22 12:42:19.224 -07:00 [DBG] Connection id "0HMJC394V68J5" started.
+2022-07-22 12:42:19.258 -07:00 [DBG] Connection id "0HMJC394V68J6" accepted.
+2022-07-22 12:42:19.259 -07:00 [DBG] Connection id "0HMJC394V68J6" started.
+2022-07-22 12:42:19.304 -07:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-07-22 12:42:19.523 -07:00 [DBG] Connection id "0HMJC394V68J5" stopped.
+2022-07-22 12:42:19.669 -07:00 [DBG] Connection id "0HMJC394V68J5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-07-22 12:42:19.708 -07:00 [DBG] Connection 0HMJC394V68J6 established using the following protocol: "Tls12"
+2022-07-22 12:42:19.785 -07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7073/api/authentication/register application/json 94
+2022-07-22 12:42:19.789 -07:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-07-22 12:42:19.860 -07:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/register'
+2022-07-22 12:42:19.868 -07:00 [DBG] Endpoint 'NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API)' with route pattern 'api/authentication/register' is valid for the request path '/api/authentication/register'
+2022-07-22 12:42:19.871 -07:00 [DBG] Request matched endpoint 'NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API)'
+2022-07-22 12:42:19.906 -07:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-07-22 12:42:19.976 -07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-07-22 12:42:19.980 -07:00 [INF] Executing endpoint 'NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API)'
+2022-07-22 12:42:20.035 -07:00 [INF] Route matched with {action = "RegisterUser", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] RegisterUser(NetflixTitles.API.Models.RegisterUserDto) on controller NetflixTitles.API.Controllers.AuthenticationController (NetflixTitles.API).
+2022-07-22 12:42:20.037 -07:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-07-22 12:42:20.037 -07:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-07-22 12:42:20.038 -07:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-07-22 12:42:20.039 -07:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-07-22 12:42:20.039 -07:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-07-22 12:42:20.041 -07:00 [DBG] Executing controller factory for controller NetflixTitles.API.Controllers.AuthenticationController (NetflixTitles.API)
+2022-07-22 12:42:20.508 -07:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2022-07-22 12:42:21.474 -07:00 [INF] Entity Framework Core 6.0.6 initialized 'netflix_appContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.1' with options: MaxPoolSize=1024 ServerVersion 8.0.29-mysql 
+2022-07-22 12:42:21.689 -07:00 [DBG] Executed controller factory for controller NetflixTitles.API.Controllers.AuthenticationController (NetflixTitles.API)
+2022-07-22 12:42:21.697 -07:00 [DBG] Attempting to bind parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto' ...
+2022-07-22 12:42:21.701 -07:00 [DBG] Attempting to bind parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto' using the name '' in request data ...
+2022-07-22 12:42:21.702 -07:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2022-07-22 12:42:21.704 -07:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2022-07-22 12:42:21.711 -07:00 [DBG] Connection id "0HMJC394V68J6", Request id "0HMJC394V68J6:00000002": started reading request body.
+2022-07-22 12:42:21.712 -07:00 [DBG] Connection id "0HMJC394V68J6", Request id "0HMJC394V68J6:00000002": done reading request body.
+2022-07-22 12:42:21.855 -07:00 [DBG] Done attempting to bind parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto'.
+2022-07-22 12:42:21.855 -07:00 [DBG] Done attempting to bind parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto'.
+2022-07-22 12:42:21.856 -07:00 [DBG] Attempting to validate the bound parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto' ...
+2022-07-22 12:42:21.873 -07:00 [DBG] Done attempting to validate the bound parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto'.
+2022-07-22 12:42:21.961 -07:00 [DBG] 'netflix_appContext' generated a temporary value for the property 'UserId.User'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-07-22 12:42:22.042 -07:00 [DBG] Context 'netflix_appContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-07-22 12:42:22.047 -07:00 [DBG] SaveChanges starting for 'netflix_appContext'.
+2022-07-22 12:42:22.052 -07:00 [DBG] DetectChanges starting for 'netflix_appContext'.
+2022-07-22 12:42:22.064 -07:00 [DBG] DetectChanges completed for 'netflix_appContext'.
+2022-07-22 12:42:22.093 -07:00 [DBG] Opening connection to database 'netflix_app' on server 'localhost'.
+2022-07-22 12:42:22.825 -07:00 [DBG] Opened connection to database 'netflix_app' on server 'localhost'.
+2022-07-22 12:42:22.834 -07:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2022-07-22 12:42:22.906 -07:00 [DBG] Began transaction with isolation level 'Unspecified'.
+2022-07-22 12:42:22.976 -07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-07-22 12:42:22.983 -07:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2022-07-22 12:42:23.016 -07:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 255), @p1='?' (Size = 255), @p2='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `users` (`email`, `password`, `user_name`)
+VALUES (@p0, @p1, @p2);
+SELECT `user_id`, `date_created`, `user_type`
+FROM `users`
+WHERE ROW_COUNT() = 1 AND `user_id` = LAST_INSERT_ID();
+2022-07-22 12:42:23.178 -07:00 [INF] Executed DbCommand (160ms) [Parameters=[@p0='?' (Size = 255), @p1='?' (Size = 255), @p2='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `users` (`email`, `password`, `user_name`)
+VALUES (@p0, @p1, @p2);
+SELECT `user_id`, `date_created`, `user_type`
+FROM `users`
+WHERE ROW_COUNT() = 1 AND `user_id` = LAST_INSERT_ID();
+2022-07-22 12:42:23.216 -07:00 [DBG] The foreign key property 'User.UserId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2022-07-22 12:42:23.227 -07:00 [DBG] A data reader was disposed.
+2022-07-22 12:42:23.233 -07:00 [DBG] Committing transaction.
+2022-07-22 12:42:23.296 -07:00 [DBG] Committed transaction.
+2022-07-22 12:42:23.300 -07:00 [DBG] Closing connection to database 'netflix_app' on server 'localhost'.
+2022-07-22 12:42:23.302 -07:00 [DBG] Closed connection to database 'netflix_app' on server 'localhost'.
+2022-07-22 12:42:23.304 -07:00 [DBG] Disposing transaction.
+2022-07-22 12:42:23.322 -07:00 [DBG] An entity of type 'User' tracked by 'netflix_appContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-07-22 12:42:23.325 -07:00 [DBG] SaveChanges completed for 'netflix_appContext' with 1 entities written to the database.
+2022-07-22 12:42:23.335 -07:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-07-22 12:42:23.343 -07:00 [INF] Executed action NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API) in 3297.721ms
+2022-07-22 12:42:23.347 -07:00 [INF] Executed endpoint 'NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API)'
+2022-07-22 12:42:23.354 -07:00 [DBG] Connection id "0HMJC394V68J6" completed keep alive response.
+2022-07-22 12:42:23.371 -07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7073/api/authentication/register application/json 94 - 204 - - 3590.9406ms
+2022-07-22 14:06:28.717 -07:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-07-22 14:06:28.886 -07:00 [DBG] Hosting starting
+2022-07-22 14:06:28.927 -07:00 [INF] User profile is available. Using '/Users/chandlerpotter/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-07-22 14:06:28.936 -07:00 [DBG] Reading data from file '/Users/chandlerpotter/.aspnet/DataProtection-Keys/key-2c2b681e-5d66-4926-8d25-12ef831d143a.xml'.
+2022-07-22 14:06:28.965 -07:00 [DBG] Found key {2c2b681e-5d66-4926-8d25-12ef831d143a}.
+2022-07-22 14:06:28.988 -07:00 [DBG] Considering key {2c2b681e-5d66-4926-8d25-12ef831d143a} with expiration date 2022-08-30 02:56:11Z as default key.
+2022-07-22 14:06:28.995 -07:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2022-07-22 14:06:29.005 -07:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2022-07-22 14:06:29.006 -07:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2022-07-22 14:06:29.021 -07:00 [DBG] Using key {2c2b681e-5d66-4926-8d25-12ef831d143a} as the default key.
+2022-07-22 14:06:29.023 -07:00 [DBG] Key ring with default key {2c2b681e-5d66-4926-8d25-12ef831d143a} was loaded during application startup.
+2022-07-22 14:06:29.272 -07:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 8E52971A6A589C1DFB045CCF462DA2B18BE72287)
+2022-07-22 14:06:29.489 -07:00 [INF] Now listening on: https://localhost:7073
+2022-07-22 14:06:29.490 -07:00 [INF] Now listening on: http://localhost:5170
+2022-07-22 14:06:29.491 -07:00 [DBG] Loaded hosting startup assembly NetflixTitles.API
+2022-07-22 14:06:29.493 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-22 14:06:29.493 -07:00 [INF] Hosting environment: Development
+2022-07-22 14:06:29.493 -07:00 [INF] Content root path: /Users/chandlerpotter/Projects/NetflixTitles/NetflixTitles.API/
+2022-07-22 14:06:29.493 -07:00 [DBG] Hosting started
+2022-07-22 14:06:33.342 -07:00 [DBG] Connection id "0HMJC4O777JKL" received FIN.
+2022-07-22 14:06:33.374 -07:00 [DBG] Connection id "0HMJC4O777JKL" accepted.
+2022-07-22 14:06:33.377 -07:00 [DBG] Connection id "0HMJC4O777JKL" started.
+2022-07-22 14:06:33.409 -07:00 [DBG] Connection id "0HMJC4O777JKM" accepted.
+2022-07-22 14:06:33.409 -07:00 [DBG] Connection id "0HMJC4O777JKM" started.
+2022-07-22 14:06:33.487 -07:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-07-22 14:06:33.687 -07:00 [DBG] Connection id "0HMJC4O777JKL" stopped.
+2022-07-22 14:06:33.767 -07:00 [DBG] Connection id "0HMJC4O777JKL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-07-22 14:06:33.845 -07:00 [DBG] Connection 0HMJC4O777JKM established using the following protocol: "Tls12"
+2022-07-22 14:06:33.925 -07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7073/api/authentication/register application/json 94
+2022-07-22 14:06:33.930 -07:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-07-22 14:06:34.039 -07:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/register'
+2022-07-22 14:06:34.047 -07:00 [DBG] Endpoint 'NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API)' with route pattern 'api/authentication/register' is valid for the request path '/api/authentication/register'
+2022-07-22 14:06:34.051 -07:00 [DBG] Request matched endpoint 'NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API)'
+2022-07-22 14:06:34.091 -07:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-07-22 14:06:34.178 -07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-07-22 14:06:34.185 -07:00 [INF] Executing endpoint 'NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API)'
+2022-07-22 14:06:34.252 -07:00 [INF] Route matched with {action = "RegisterUser", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] RegisterUser(NetflixTitles.API.Models.RegisterUserDto) on controller NetflixTitles.API.Controllers.AuthenticationController (NetflixTitles.API).
+2022-07-22 14:06:34.255 -07:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-07-22 14:06:34.256 -07:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-07-22 14:06:34.257 -07:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-07-22 14:06:34.257 -07:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-07-22 14:06:34.258 -07:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-07-22 14:06:34.259 -07:00 [DBG] Executing controller factory for controller NetflixTitles.API.Controllers.AuthenticationController (NetflixTitles.API)
+2022-07-22 14:06:34.752 -07:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2022-07-22 14:06:35.784 -07:00 [INF] Entity Framework Core 6.0.6 initialized 'netflix_appContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.1' with options: MaxPoolSize=1024 ServerVersion 8.0.29-mysql 
+2022-07-22 14:06:36.066 -07:00 [DBG] Executed controller factory for controller NetflixTitles.API.Controllers.AuthenticationController (NetflixTitles.API)
+2022-07-22 14:06:36.075 -07:00 [DBG] Attempting to bind parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto' ...
+2022-07-22 14:06:36.081 -07:00 [DBG] Attempting to bind parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto' using the name '' in request data ...
+2022-07-22 14:06:36.082 -07:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2022-07-22 14:06:36.086 -07:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2022-07-22 14:06:36.096 -07:00 [DBG] Connection id "0HMJC4O777JKM", Request id "0HMJC4O777JKM:00000002": started reading request body.
+2022-07-22 14:06:36.097 -07:00 [DBG] Connection id "0HMJC4O777JKM", Request id "0HMJC4O777JKM:00000002": done reading request body.
+2022-07-22 14:06:36.281 -07:00 [DBG] Done attempting to bind parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto'.
+2022-07-22 14:06:36.281 -07:00 [DBG] Done attempting to bind parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto'.
+2022-07-22 14:06:36.282 -07:00 [DBG] Attempting to validate the bound parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto' ...
+2022-07-22 14:06:36.306 -07:00 [DBG] Done attempting to validate the bound parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto'.
+2022-07-22 14:06:36.434 -07:00 [DBG] 'netflix_appContext' generated a temporary value for the property 'UserId.User'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-07-22 14:06:36.534 -07:00 [DBG] Context 'netflix_appContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-07-22 14:06:36.541 -07:00 [DBG] SaveChanges starting for 'netflix_appContext'.
+2022-07-22 14:06:36.549 -07:00 [DBG] DetectChanges starting for 'netflix_appContext'.
+2022-07-22 14:06:36.564 -07:00 [DBG] DetectChanges completed for 'netflix_appContext'.
+2022-07-22 14:06:36.600 -07:00 [DBG] Opening connection to database 'netflix_app' on server 'localhost'.
+2022-07-22 14:06:37.192 -07:00 [DBG] Opened connection to database 'netflix_app' on server 'localhost'.
+2022-07-22 14:06:37.201 -07:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2022-07-22 14:06:37.271 -07:00 [DBG] Began transaction with isolation level 'Unspecified'.
+2022-07-22 14:06:37.345 -07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-07-22 14:06:37.353 -07:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2022-07-22 14:06:37.389 -07:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 255), @p1='?' (Size = 255), @p2='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `users` (`email`, `password`, `user_name`)
+VALUES (@p0, @p1, @p2);
+SELECT `user_id`, `date_created`, `user_type`
+FROM `users`
+WHERE ROW_COUNT() = 1 AND `user_id` = LAST_INSERT_ID();
+2022-07-22 14:06:37.491 -07:00 [INF] Executed DbCommand (103ms) [Parameters=[@p0='?' (Size = 255), @p1='?' (Size = 255), @p2='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `users` (`email`, `password`, `user_name`)
+VALUES (@p0, @p1, @p2);
+SELECT `user_id`, `date_created`, `user_type`
+FROM `users`
+WHERE ROW_COUNT() = 1 AND `user_id` = LAST_INSERT_ID();
+2022-07-22 14:06:37.531 -07:00 [DBG] The foreign key property 'User.UserId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2022-07-22 14:06:37.543 -07:00 [DBG] A data reader was disposed.
+2022-07-22 14:06:37.550 -07:00 [DBG] Committing transaction.
+2022-07-22 14:06:37.569 -07:00 [DBG] Committed transaction.
+2022-07-22 14:06:37.573 -07:00 [DBG] Closing connection to database 'netflix_app' on server 'localhost'.
+2022-07-22 14:06:37.575 -07:00 [DBG] Closed connection to database 'netflix_app' on server 'localhost'.
+2022-07-22 14:06:37.577 -07:00 [DBG] Disposing transaction.
+2022-07-22 14:06:37.595 -07:00 [DBG] An entity of type 'User' tracked by 'netflix_appContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-07-22 14:06:37.599 -07:00 [DBG] SaveChanges completed for 'netflix_appContext' with 1 entities written to the database.
+2022-07-22 14:06:37.627 -07:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2022-07-22 14:06:37.630 -07:00 [DBG] No information found on request to perform content negotiation.
+2022-07-22 14:06:37.630 -07:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-07-22 14:06:37.630 -07:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-07-22 14:06:37.632 -07:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-07-22 14:06:37.632 -07:00 [INF] Executing CreatedAtRouteResult, writing value of type 'NetflixTitles.API.Models.UserDto'.
+2022-07-22 14:06:37.660 -07:00 [DBG] Found the endpoints ["NetflixTitles.API.Controllers.UserController.GetUser (NetflixTitles.API)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2022-07-22 14:06:37.670 -07:00 [DBG] Failed to process the template api/users/{id} for NetflixTitles.API.Controllers.UserController.GetUser (NetflixTitles.API). A required route value is missing, or has a different value from the required default values. Supplied ambient values { "action": "RegisterUser", "controller": "Authentication" } and { "name": "registeredUser" } with default values { "action": "GetUser", "controller": "User" }
+2022-07-22 14:06:37.671 -07:00 [DBG] Link generation failed for endpoints ["NetflixTitles.API.Controllers.UserController.GetUser (NetflixTitles.API)"]
+2022-07-22 14:06:37.682 -07:00 [INF] Executed action NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API) in 3418.2802ms
+2022-07-22 14:06:37.686 -07:00 [INF] Executed endpoint 'NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API)'
+2022-07-22 14:06:37.690 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtRouteResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.ObjectResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-07-22 14:06:37.717 -07:00 [DBG] Connection id "0HMJC4O777JKM" completed keep alive response.
+2022-07-22 14:06:37.734 -07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7073/api/authentication/register application/json 94 - 500 - text/plain;+charset=utf-8 3813.6346ms
+2022-07-22 14:07:14.412 -07:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-07-22 14:07:14.596 -07:00 [DBG] Hosting starting
+2022-07-22 14:07:14.631 -07:00 [INF] User profile is available. Using '/Users/chandlerpotter/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-07-22 14:07:14.641 -07:00 [DBG] Reading data from file '/Users/chandlerpotter/.aspnet/DataProtection-Keys/key-2c2b681e-5d66-4926-8d25-12ef831d143a.xml'.
+2022-07-22 14:07:14.669 -07:00 [DBG] Found key {2c2b681e-5d66-4926-8d25-12ef831d143a}.
+2022-07-22 14:07:14.690 -07:00 [DBG] Considering key {2c2b681e-5d66-4926-8d25-12ef831d143a} with expiration date 2022-08-30 02:56:11Z as default key.
+2022-07-22 14:07:14.697 -07:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2022-07-22 14:07:14.707 -07:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2022-07-22 14:07:14.708 -07:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2022-07-22 14:07:14.722 -07:00 [DBG] Using key {2c2b681e-5d66-4926-8d25-12ef831d143a} as the default key.
+2022-07-22 14:07:14.724 -07:00 [DBG] Key ring with default key {2c2b681e-5d66-4926-8d25-12ef831d143a} was loaded during application startup.
+2022-07-22 14:07:14.941 -07:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 8E52971A6A589C1DFB045CCF462DA2B18BE72287)
+2022-07-22 14:07:15.188 -07:00 [INF] Now listening on: https://localhost:7073
+2022-07-22 14:07:15.190 -07:00 [INF] Now listening on: http://localhost:5170
+2022-07-22 14:07:15.190 -07:00 [DBG] Loaded hosting startup assembly NetflixTitles.API
+2022-07-22 14:07:15.192 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-22 14:07:15.192 -07:00 [INF] Hosting environment: Development
+2022-07-22 14:07:15.193 -07:00 [INF] Content root path: /Users/chandlerpotter/Projects/NetflixTitles/NetflixTitles.API/
+2022-07-22 14:07:15.244 -07:00 [DBG] Hosting started
+2022-07-22 14:07:17.876 -07:00 [DBG] Connection id "0HMJC4OKFUHPV" received FIN.
+2022-07-22 14:07:17.900 -07:00 [DBG] Connection id "0HMJC4OKFUHPV" accepted.
+2022-07-22 14:07:17.903 -07:00 [DBG] Connection id "0HMJC4OKFUHPV" started.
+2022-07-22 14:07:17.913 -07:00 [DBG] Connection id "0HMJC4OKFUHQ0" accepted.
+2022-07-22 14:07:17.915 -07:00 [DBG] Connection id "0HMJC4OKFUHQ0" started.
+2022-07-22 14:07:17.981 -07:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-07-22 14:07:18.089 -07:00 [DBG] Connection id "0HMJC4OKFUHPV" stopped.
+2022-07-22 14:07:18.142 -07:00 [DBG] Connection id "0HMJC4OKFUHPV" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-07-22 14:07:18.307 -07:00 [DBG] Connection 0HMJC4OKFUHQ0 established using the following protocol: "Tls12"
+2022-07-22 14:07:18.384 -07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7073/api/authentication/register application/json 94
+2022-07-22 14:07:18.389 -07:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-07-22 14:07:18.464 -07:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/register'
+2022-07-22 14:07:18.473 -07:00 [DBG] Endpoint 'NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API)' with route pattern 'api/authentication/register' is valid for the request path '/api/authentication/register'
+2022-07-22 14:07:18.476 -07:00 [DBG] Request matched endpoint 'NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API)'
+2022-07-22 14:07:18.511 -07:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-07-22 14:07:18.589 -07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-07-22 14:07:18.594 -07:00 [INF] Executing endpoint 'NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API)'
+2022-07-22 14:07:18.665 -07:00 [INF] Route matched with {action = "RegisterUser", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] RegisterUser(NetflixTitles.API.Models.RegisterUserDto) on controller NetflixTitles.API.Controllers.AuthenticationController (NetflixTitles.API).
+2022-07-22 14:07:18.667 -07:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-07-22 14:07:18.668 -07:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-07-22 14:07:18.669 -07:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-07-22 14:07:18.669 -07:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-07-22 14:07:18.670 -07:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-07-22 14:07:18.672 -07:00 [DBG] Executing controller factory for controller NetflixTitles.API.Controllers.AuthenticationController (NetflixTitles.API)
+2022-07-22 14:07:19.167 -07:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2022-07-22 14:07:20.207 -07:00 [INF] Entity Framework Core 6.0.6 initialized 'netflix_appContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.1' with options: MaxPoolSize=1024 ServerVersion 8.0.29-mysql 
+2022-07-22 14:07:20.437 -07:00 [DBG] Executed controller factory for controller NetflixTitles.API.Controllers.AuthenticationController (NetflixTitles.API)
+2022-07-22 14:07:20.445 -07:00 [DBG] Attempting to bind parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto' ...
+2022-07-22 14:07:20.450 -07:00 [DBG] Attempting to bind parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto' using the name '' in request data ...
+2022-07-22 14:07:20.452 -07:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2022-07-22 14:07:20.453 -07:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2022-07-22 14:07:20.462 -07:00 [DBG] Connection id "0HMJC4OKFUHQ0", Request id "0HMJC4OKFUHQ0:00000002": started reading request body.
+2022-07-22 14:07:20.463 -07:00 [DBG] Connection id "0HMJC4OKFUHQ0", Request id "0HMJC4OKFUHQ0:00000002": done reading request body.
+2022-07-22 14:07:20.615 -07:00 [DBG] Done attempting to bind parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto'.
+2022-07-22 14:07:20.616 -07:00 [DBG] Done attempting to bind parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto'.
+2022-07-22 14:07:20.616 -07:00 [DBG] Attempting to validate the bound parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto' ...
+2022-07-22 14:07:20.638 -07:00 [DBG] Done attempting to validate the bound parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto'.
+2022-07-22 14:07:20.737 -07:00 [DBG] 'netflix_appContext' generated a temporary value for the property 'UserId.User'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-07-22 14:07:20.824 -07:00 [DBG] Context 'netflix_appContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-07-22 14:07:20.830 -07:00 [DBG] SaveChanges starting for 'netflix_appContext'.
+2022-07-22 14:07:20.836 -07:00 [DBG] DetectChanges starting for 'netflix_appContext'.
+2022-07-22 14:07:20.851 -07:00 [DBG] DetectChanges completed for 'netflix_appContext'.
+2022-07-22 14:07:20.880 -07:00 [DBG] Opening connection to database 'netflix_app' on server 'localhost'.
+2022-07-22 14:07:21.673 -07:00 [DBG] Opened connection to database 'netflix_app' on server 'localhost'.
+2022-07-22 14:07:21.682 -07:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2022-07-22 14:07:21.754 -07:00 [DBG] Began transaction with isolation level 'Unspecified'.
+2022-07-22 14:07:21.838 -07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-07-22 14:07:21.846 -07:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2022-07-22 14:07:21.885 -07:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 255), @p1='?' (Size = 255), @p2='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `users` (`email`, `password`, `user_name`)
+VALUES (@p0, @p1, @p2);
+SELECT `user_id`, `date_created`, `user_type`
+FROM `users`
+WHERE ROW_COUNT() = 1 AND `user_id` = LAST_INSERT_ID();
+2022-07-22 14:07:21.978 -07:00 [INF] Executed DbCommand (96ms) [Parameters=[@p0='?' (Size = 255), @p1='?' (Size = 255), @p2='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `users` (`email`, `password`, `user_name`)
+VALUES (@p0, @p1, @p2);
+SELECT `user_id`, `date_created`, `user_type`
+FROM `users`
+WHERE ROW_COUNT() = 1 AND `user_id` = LAST_INSERT_ID();
+2022-07-22 14:07:22.019 -07:00 [DBG] The foreign key property 'User.UserId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2022-07-22 14:07:22.031 -07:00 [DBG] A data reader was disposed.
+2022-07-22 14:07:22.037 -07:00 [DBG] Committing transaction.
+2022-07-22 14:07:22.066 -07:00 [DBG] Committed transaction.
+2022-07-22 14:07:22.071 -07:00 [DBG] Closing connection to database 'netflix_app' on server 'localhost'.
+2022-07-22 14:07:22.073 -07:00 [DBG] Closed connection to database 'netflix_app' on server 'localhost'.
+2022-07-22 14:07:22.076 -07:00 [DBG] Disposing transaction.
+2022-07-22 14:07:22.098 -07:00 [DBG] An entity of type 'User' tracked by 'netflix_appContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-07-22 14:07:22.101 -07:00 [DBG] SaveChanges completed for 'netflix_appContext' with 1 entities written to the database.
+2022-07-22 14:07:22.127 -07:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2022-07-22 14:07:22.130 -07:00 [DBG] No information found on request to perform content negotiation.
+2022-07-22 14:07:22.131 -07:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-07-22 14:07:22.131 -07:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-07-22 14:07:22.132 -07:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-07-22 14:07:22.132 -07:00 [INF] Executing CreatedAtRouteResult, writing value of type 'NetflixTitles.API.Models.UserDto'.
+2022-07-22 14:07:22.161 -07:00 [DBG] No endpoints found for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2022-07-22 14:07:22.170 -07:00 [INF] Executed action NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API) in 3494.983ms
+2022-07-22 14:07:22.175 -07:00 [INF] Executed endpoint 'NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API)'
+2022-07-22 14:07:22.179 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtRouteResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.ObjectResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-07-22 14:07:22.202 -07:00 [DBG] Connection id "0HMJC4OKFUHQ0" completed keep alive response.
+2022-07-22 14:07:22.219 -07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7073/api/authentication/register application/json 94 - 500 - text/plain;+charset=utf-8 3840.0947ms
+2022-07-22 14:08:29.019 -07:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-07-22 14:08:29.187 -07:00 [DBG] Hosting starting
+2022-07-22 14:08:29.218 -07:00 [INF] User profile is available. Using '/Users/chandlerpotter/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-07-22 14:08:29.227 -07:00 [DBG] Reading data from file '/Users/chandlerpotter/.aspnet/DataProtection-Keys/key-2c2b681e-5d66-4926-8d25-12ef831d143a.xml'.
+2022-07-22 14:08:29.254 -07:00 [DBG] Found key {2c2b681e-5d66-4926-8d25-12ef831d143a}.
+2022-07-22 14:08:29.275 -07:00 [DBG] Considering key {2c2b681e-5d66-4926-8d25-12ef831d143a} with expiration date 2022-08-30 02:56:11Z as default key.
+2022-07-22 14:08:29.281 -07:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2022-07-22 14:08:29.290 -07:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2022-07-22 14:08:29.291 -07:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2022-07-22 14:08:29.305 -07:00 [DBG] Using key {2c2b681e-5d66-4926-8d25-12ef831d143a} as the default key.
+2022-07-22 14:08:29.307 -07:00 [DBG] Key ring with default key {2c2b681e-5d66-4926-8d25-12ef831d143a} was loaded during application startup.
+2022-07-22 14:08:29.516 -07:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 8E52971A6A589C1DFB045CCF462DA2B18BE72287)
+2022-07-22 14:08:29.790 -07:00 [INF] Now listening on: https://localhost:7073
+2022-07-22 14:08:29.792 -07:00 [INF] Now listening on: http://localhost:5170
+2022-07-22 14:08:29.793 -07:00 [DBG] Loaded hosting startup assembly NetflixTitles.API
+2022-07-22 14:08:29.846 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-22 14:08:29.872 -07:00 [INF] Hosting environment: Development
+2022-07-22 14:08:29.873 -07:00 [INF] Content root path: /Users/chandlerpotter/Projects/NetflixTitles/NetflixTitles.API/
+2022-07-22 14:08:29.873 -07:00 [DBG] Hosting started
+2022-07-22 14:08:32.990 -07:00 [DBG] Connection id "0HMJC4PAS98NH" received FIN.
+2022-07-22 14:08:33.013 -07:00 [DBG] Connection id "0HMJC4PAS98NH" accepted.
+2022-07-22 14:08:33.016 -07:00 [DBG] Connection id "0HMJC4PAS98NH" started.
+2022-07-22 14:08:33.046 -07:00 [DBG] Connection id "0HMJC4PAS98NI" accepted.
+2022-07-22 14:08:33.047 -07:00 [DBG] Connection id "0HMJC4PAS98NI" started.
+2022-07-22 14:08:33.114 -07:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-07-22 14:08:33.159 -07:00 [DBG] Connection id "0HMJC4PAS98NH" stopped.
+2022-07-22 14:08:33.188 -07:00 [DBG] Connection id "0HMJC4PAS98NH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-07-22 14:08:33.394 -07:00 [DBG] Connection 0HMJC4PAS98NI established using the following protocol: "Tls12"
+2022-07-22 14:08:33.459 -07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7073/api/authentication/register application/json 94
+2022-07-22 14:08:33.463 -07:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-07-22 14:08:33.535 -07:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/register'
+2022-07-22 14:08:33.545 -07:00 [DBG] Endpoint 'NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API)' with route pattern 'api/authentication/register' is valid for the request path '/api/authentication/register'
+2022-07-22 14:08:33.547 -07:00 [DBG] Request matched endpoint 'NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API)'
+2022-07-22 14:08:33.583 -07:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-07-22 14:08:33.659 -07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-07-22 14:08:33.665 -07:00 [INF] Executing endpoint 'NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API)'
+2022-07-22 14:08:33.725 -07:00 [INF] Route matched with {action = "RegisterUser", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] RegisterUser(NetflixTitles.API.Models.RegisterUserDto) on controller NetflixTitles.API.Controllers.AuthenticationController (NetflixTitles.API).
+2022-07-22 14:08:33.727 -07:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-07-22 14:08:33.728 -07:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-07-22 14:08:33.729 -07:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-07-22 14:08:33.729 -07:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-07-22 14:08:33.730 -07:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-07-22 14:08:33.731 -07:00 [DBG] Executing controller factory for controller NetflixTitles.API.Controllers.AuthenticationController (NetflixTitles.API)
+2022-07-22 14:08:34.177 -07:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2022-07-22 14:08:35.205 -07:00 [INF] Entity Framework Core 6.0.6 initialized 'netflix_appContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.1' with options: MaxPoolSize=1024 ServerVersion 8.0.29-mysql 
+2022-07-22 14:08:35.438 -07:00 [DBG] Executed controller factory for controller NetflixTitles.API.Controllers.AuthenticationController (NetflixTitles.API)
+2022-07-22 14:08:35.447 -07:00 [DBG] Attempting to bind parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto' ...
+2022-07-22 14:08:35.451 -07:00 [DBG] Attempting to bind parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto' using the name '' in request data ...
+2022-07-22 14:08:35.453 -07:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2022-07-22 14:08:35.455 -07:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2022-07-22 14:08:35.465 -07:00 [DBG] Connection id "0HMJC4PAS98NI", Request id "0HMJC4PAS98NI:00000002": started reading request body.
+2022-07-22 14:08:35.465 -07:00 [DBG] Connection id "0HMJC4PAS98NI", Request id "0HMJC4PAS98NI:00000002": done reading request body.
+2022-07-22 14:08:35.610 -07:00 [DBG] Done attempting to bind parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto'.
+2022-07-22 14:08:35.610 -07:00 [DBG] Done attempting to bind parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto'.
+2022-07-22 14:08:35.611 -07:00 [DBG] Attempting to validate the bound parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto' ...
+2022-07-22 14:08:35.632 -07:00 [DBG] Done attempting to validate the bound parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto'.
+2022-07-22 14:08:35.725 -07:00 [DBG] 'netflix_appContext' generated a temporary value for the property 'UserId.User'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-07-22 14:08:35.811 -07:00 [DBG] Context 'netflix_appContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-07-22 14:08:35.817 -07:00 [DBG] SaveChanges starting for 'netflix_appContext'.
+2022-07-22 14:08:35.821 -07:00 [DBG] DetectChanges starting for 'netflix_appContext'.
+2022-07-22 14:08:35.835 -07:00 [DBG] DetectChanges completed for 'netflix_appContext'.
+2022-07-22 14:08:35.865 -07:00 [DBG] Opening connection to database 'netflix_app' on server 'localhost'.
+2022-07-22 14:08:36.472 -07:00 [DBG] Opened connection to database 'netflix_app' on server 'localhost'.
+2022-07-22 14:08:36.482 -07:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2022-07-22 14:08:36.552 -07:00 [DBG] Began transaction with isolation level 'Unspecified'.
+2022-07-22 14:08:36.629 -07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-07-22 14:08:36.637 -07:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2022-07-22 14:08:36.673 -07:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 255), @p1='?' (Size = 255), @p2='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `users` (`email`, `password`, `user_name`)
+VALUES (@p0, @p1, @p2);
+SELECT `user_id`, `date_created`, `user_type`
+FROM `users`
+WHERE ROW_COUNT() = 1 AND `user_id` = LAST_INSERT_ID();
+2022-07-22 14:08:36.718 -07:00 [INF] Executed DbCommand (45ms) [Parameters=[@p0='?' (Size = 255), @p1='?' (Size = 255), @p2='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `users` (`email`, `password`, `user_name`)
+VALUES (@p0, @p1, @p2);
+SELECT `user_id`, `date_created`, `user_type`
+FROM `users`
+WHERE ROW_COUNT() = 1 AND `user_id` = LAST_INSERT_ID();
+2022-07-22 14:08:36.757 -07:00 [DBG] The foreign key property 'User.UserId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2022-07-22 14:08:36.768 -07:00 [DBG] A data reader was disposed.
+2022-07-22 14:08:36.775 -07:00 [DBG] Committing transaction.
+2022-07-22 14:08:36.786 -07:00 [DBG] Committed transaction.
+2022-07-22 14:08:36.791 -07:00 [DBG] Closing connection to database 'netflix_app' on server 'localhost'.
+2022-07-22 14:08:36.794 -07:00 [DBG] Closed connection to database 'netflix_app' on server 'localhost'.
+2022-07-22 14:08:36.797 -07:00 [DBG] Disposing transaction.
+2022-07-22 14:08:36.814 -07:00 [DBG] An entity of type 'User' tracked by 'netflix_appContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-07-22 14:08:36.817 -07:00 [DBG] SaveChanges completed for 'netflix_appContext' with 1 entities written to the database.
+2022-07-22 14:08:36.845 -07:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2022-07-22 14:08:36.848 -07:00 [DBG] No information found on request to perform content negotiation.
+2022-07-22 14:08:36.848 -07:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-07-22 14:08:36.849 -07:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-07-22 14:08:36.850 -07:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-07-22 14:08:36.851 -07:00 [INF] Executing CreatedAtRouteResult, writing value of type 'NetflixTitles.API.Models.UserDto'.
+2022-07-22 14:08:36.877 -07:00 [DBG] Found the endpoints ["NetflixTitles.API.Controllers.UserController.GetUser (NetflixTitles.API)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2022-07-22 14:08:36.888 -07:00 [DBG] Failed to process the template api/users/{id} for NetflixTitles.API.Controllers.UserController.GetUser (NetflixTitles.API). A required route value is missing, or has a different value from the required default values. Supplied ambient values { "action": "RegisterUser", "controller": "Authentication" } and { "controller": "users", "name": "registeredUser" } with default values { "action": "GetUser", "controller": "User" }
+2022-07-22 14:08:36.890 -07:00 [DBG] Link generation failed for endpoints ["NetflixTitles.API.Controllers.UserController.GetUser (NetflixTitles.API)"]
+2022-07-22 14:08:36.902 -07:00 [INF] Executed action NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API) in 3165.9649ms
+2022-07-22 14:08:36.907 -07:00 [INF] Executed endpoint 'NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API)'
+2022-07-22 14:08:36.913 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtRouteResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.ObjectResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-07-22 14:08:36.938 -07:00 [DBG] Connection id "0HMJC4PAS98NI" completed keep alive response.
+2022-07-22 14:08:36.956 -07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7073/api/authentication/register application/json 94 - 500 - text/plain;+charset=utf-8 3500.7787ms
+2022-07-22 14:10:20.675 -07:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-07-22 14:10:20.845 -07:00 [DBG] Hosting starting
+2022-07-22 14:10:20.877 -07:00 [INF] User profile is available. Using '/Users/chandlerpotter/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-07-22 14:10:20.885 -07:00 [DBG] Reading data from file '/Users/chandlerpotter/.aspnet/DataProtection-Keys/key-2c2b681e-5d66-4926-8d25-12ef831d143a.xml'.
+2022-07-22 14:10:20.913 -07:00 [DBG] Found key {2c2b681e-5d66-4926-8d25-12ef831d143a}.
+2022-07-22 14:10:20.937 -07:00 [DBG] Considering key {2c2b681e-5d66-4926-8d25-12ef831d143a} with expiration date 2022-08-30 02:56:11Z as default key.
+2022-07-22 14:10:20.944 -07:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2022-07-22 14:10:20.954 -07:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2022-07-22 14:10:20.955 -07:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2022-07-22 14:10:20.967 -07:00 [DBG] Using key {2c2b681e-5d66-4926-8d25-12ef831d143a} as the default key.
+2022-07-22 14:10:20.969 -07:00 [DBG] Key ring with default key {2c2b681e-5d66-4926-8d25-12ef831d143a} was loaded during application startup.
+2022-07-22 14:10:21.184 -07:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 8E52971A6A589C1DFB045CCF462DA2B18BE72287)
+2022-07-22 14:10:21.381 -07:00 [INF] Now listening on: https://localhost:7073
+2022-07-22 14:10:21.383 -07:00 [INF] Now listening on: http://localhost:5170
+2022-07-22 14:10:21.461 -07:00 [DBG] Loaded hosting startup assembly NetflixTitles.API
+2022-07-22 14:10:21.464 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-22 14:10:21.466 -07:00 [INF] Hosting environment: Development
+2022-07-22 14:10:21.467 -07:00 [INF] Content root path: /Users/chandlerpotter/Projects/NetflixTitles/NetflixTitles.API/
+2022-07-22 14:10:21.467 -07:00 [DBG] Hosting started
+2022-07-22 14:10:25.239 -07:00 [DBG] Connection id "0HMJC4QCAOO8N" received FIN.
+2022-07-22 14:10:25.270 -07:00 [DBG] Connection id "0HMJC4QCAOO8N" accepted.
+2022-07-22 14:10:25.273 -07:00 [DBG] Connection id "0HMJC4QCAOO8N" started.
+2022-07-22 14:10:25.284 -07:00 [DBG] Connection id "0HMJC4QCAOO8O" accepted.
+2022-07-22 14:10:25.285 -07:00 [DBG] Connection id "0HMJC4QCAOO8O" started.
+2022-07-22 14:10:25.355 -07:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-07-22 14:10:25.473 -07:00 [DBG] Connection id "0HMJC4QCAOO8N" stopped.
+2022-07-22 14:10:25.625 -07:00 [DBG] Connection id "0HMJC4QCAOO8N" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-07-22 14:10:25.647 -07:00 [DBG] Connection 0HMJC4QCAOO8O established using the following protocol: "Tls12"
+2022-07-22 14:10:25.721 -07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7073/api/authentication/register application/json 94
+2022-07-22 14:10:25.726 -07:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-07-22 14:10:25.829 -07:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/register'
+2022-07-22 14:10:25.838 -07:00 [DBG] Endpoint 'NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API)' with route pattern 'api/authentication/register' is valid for the request path '/api/authentication/register'
+2022-07-22 14:10:25.841 -07:00 [DBG] Request matched endpoint 'NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API)'
+2022-07-22 14:10:25.876 -07:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-07-22 14:10:25.947 -07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-07-22 14:10:25.952 -07:00 [INF] Executing endpoint 'NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API)'
+2022-07-22 14:10:26.017 -07:00 [INF] Route matched with {action = "RegisterUser", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] RegisterUser(NetflixTitles.API.Models.RegisterUserDto) on controller NetflixTitles.API.Controllers.AuthenticationController (NetflixTitles.API).
+2022-07-22 14:10:26.019 -07:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-07-22 14:10:26.020 -07:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-07-22 14:10:26.021 -07:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-07-22 14:10:26.021 -07:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-07-22 14:10:26.022 -07:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-07-22 14:10:26.023 -07:00 [DBG] Executing controller factory for controller NetflixTitles.API.Controllers.AuthenticationController (NetflixTitles.API)
+2022-07-22 14:10:26.467 -07:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2022-07-22 14:10:27.468 -07:00 [INF] Entity Framework Core 6.0.6 initialized 'netflix_appContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.1' with options: MaxPoolSize=1024 ServerVersion 8.0.29-mysql 
+2022-07-22 14:10:27.701 -07:00 [DBG] Executed controller factory for controller NetflixTitles.API.Controllers.AuthenticationController (NetflixTitles.API)
+2022-07-22 14:10:27.710 -07:00 [DBG] Attempting to bind parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto' ...
+2022-07-22 14:10:27.715 -07:00 [DBG] Attempting to bind parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto' using the name '' in request data ...
+2022-07-22 14:10:27.717 -07:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2022-07-22 14:10:27.719 -07:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2022-07-22 14:10:27.730 -07:00 [DBG] Connection id "0HMJC4QCAOO8O", Request id "0HMJC4QCAOO8O:00000002": started reading request body.
+2022-07-22 14:10:27.731 -07:00 [DBG] Connection id "0HMJC4QCAOO8O", Request id "0HMJC4QCAOO8O:00000002": done reading request body.
+2022-07-22 14:10:27.882 -07:00 [DBG] Done attempting to bind parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto'.
+2022-07-22 14:10:27.882 -07:00 [DBG] Done attempting to bind parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto'.
+2022-07-22 14:10:27.882 -07:00 [DBG] Attempting to validate the bound parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto' ...
+2022-07-22 14:10:27.902 -07:00 [DBG] Done attempting to validate the bound parameter 'registerUserDto' of type 'NetflixTitles.API.Models.RegisterUserDto'.
+2022-07-22 14:10:28.004 -07:00 [DBG] 'netflix_appContext' generated a temporary value for the property 'UserId.User'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-07-22 14:10:28.093 -07:00 [DBG] Context 'netflix_appContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-07-22 14:10:28.100 -07:00 [DBG] SaveChanges starting for 'netflix_appContext'.
+2022-07-22 14:10:28.105 -07:00 [DBG] DetectChanges starting for 'netflix_appContext'.
+2022-07-22 14:10:28.119 -07:00 [DBG] DetectChanges completed for 'netflix_appContext'.
+2022-07-22 14:10:28.146 -07:00 [DBG] Opening connection to database 'netflix_app' on server 'localhost'.
+2022-07-22 14:10:28.694 -07:00 [DBG] Opened connection to database 'netflix_app' on server 'localhost'.
+2022-07-22 14:10:28.701 -07:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2022-07-22 14:10:28.769 -07:00 [DBG] Began transaction with isolation level 'Unspecified'.
+2022-07-22 14:10:28.843 -07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-07-22 14:10:28.850 -07:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2022-07-22 14:10:28.884 -07:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 255), @p1='?' (Size = 255), @p2='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `users` (`email`, `password`, `user_name`)
+VALUES (@p0, @p1, @p2);
+SELECT `user_id`, `date_created`, `user_type`
+FROM `users`
+WHERE ROW_COUNT() = 1 AND `user_id` = LAST_INSERT_ID();
+2022-07-22 14:10:29.032 -07:00 [INF] Executed DbCommand (145ms) [Parameters=[@p0='?' (Size = 255), @p1='?' (Size = 255), @p2='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `users` (`email`, `password`, `user_name`)
+VALUES (@p0, @p1, @p2);
+SELECT `user_id`, `date_created`, `user_type`
+FROM `users`
+WHERE ROW_COUNT() = 1 AND `user_id` = LAST_INSERT_ID();
+2022-07-22 14:10:29.070 -07:00 [DBG] The foreign key property 'User.UserId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2022-07-22 14:10:29.083 -07:00 [DBG] A data reader was disposed.
+2022-07-22 14:10:29.088 -07:00 [DBG] Committing transaction.
+2022-07-22 14:10:29.200 -07:00 [DBG] Committed transaction.
+2022-07-22 14:10:29.207 -07:00 [DBG] Closing connection to database 'netflix_app' on server 'localhost'.
+2022-07-22 14:10:29.209 -07:00 [DBG] Closed connection to database 'netflix_app' on server 'localhost'.
+2022-07-22 14:10:29.212 -07:00 [DBG] Disposing transaction.
+2022-07-22 14:10:29.231 -07:00 [DBG] An entity of type 'User' tracked by 'netflix_appContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-07-22 14:10:29.235 -07:00 [DBG] SaveChanges completed for 'netflix_appContext' with 1 entities written to the database.
+2022-07-22 14:10:29.263 -07:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2022-07-22 14:10:29.266 -07:00 [DBG] No information found on request to perform content negotiation.
+2022-07-22 14:10:29.266 -07:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-07-22 14:10:29.266 -07:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-07-22 14:10:29.268 -07:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-07-22 14:10:29.268 -07:00 [INF] Executing CreatedAtRouteResult, writing value of type 'NetflixTitles.API.Models.UserDto'.
+2022-07-22 14:10:29.295 -07:00 [DBG] Found the endpoints ["NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2022-07-22 14:10:29.308 -07:00 [DBG] Successfully processed template api/authentication/register for NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API) resulting in /api/authentication/register and ?name=registeredUser
+2022-07-22 14:10:29.310 -07:00 [DBG] Link generation succeeded for endpoints ["NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API)"] with result /api/authentication/register?name=registeredUser
+2022-07-22 14:10:29.401 -07:00 [INF] Executed action NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API) in 3372.673ms
+2022-07-22 14:10:29.405 -07:00 [INF] Executed endpoint 'NetflixTitles.API.Controllers.AuthenticationController.RegisterUser (NetflixTitles.API)'
+2022-07-22 14:10:29.409 -07:00 [DBG] Connection id "0HMJC4QCAOO8O" completed keep alive response.
+2022-07-22 14:10:29.425 -07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7073/api/authentication/register application/json 94 - 201 134 application/json;+charset=utf-8 3709.1081ms

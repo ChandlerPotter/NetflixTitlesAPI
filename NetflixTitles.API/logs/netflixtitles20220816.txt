@@ -1,0 +1,29 @@
+2022-08-16 18:15:02.891 -07:00 [DBG] Connection id "0HMJV4314VUFO" accepted.
+2022-08-16 18:15:02.947 -07:00 [DBG] Connection id "0HMJV4314VUFO" started.
+2022-08-16 18:15:03.133 -07:00 [DBG] Connection 0HMJV4314VUFO established using the following protocol: "Tls12"
+2022-08-16 18:15:03.143 -07:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7073/api/lists - 0
+2022-08-16 18:15:03.143 -07:00 [DBG] 1 candidate(s) found for the request path '/api/lists'
+2022-08-16 18:15:03.144 -07:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2022-08-16 18:15:03.144 -07:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-08-16 18:15:03.145 -07:00 [DBG] The request has an origin header: 'http://localhost:5500'.
+2022-08-16 18:15:03.145 -07:00 [INF] CORS policy execution successful.
+2022-08-16 18:15:03.146 -07:00 [DBG] The request is a preflight request.
+2022-08-16 18:15:03.148 -07:00 [DBG] Connection id "0HMJV4314VUFO" completed keep alive response.
+2022-08-16 18:15:03.148 -07:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7073/api/lists - 0 - 204 - - 6.8569ms
+2022-08-16 18:15:03.151 -07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7073/api/lists - -
+2022-08-16 18:15:03.151 -07:00 [DBG] 1 candidate(s) found for the request path '/api/lists'
+2022-08-16 18:15:03.151 -07:00 [DBG] Endpoint 'NetflixTitles.API.Controllers.ListsController.GetLists (NetflixTitles.API)' with route pattern 'api/lists' is valid for the request path '/api/lists'
+2022-08-16 18:15:03.151 -07:00 [DBG] Request matched endpoint 'NetflixTitles.API.Controllers.ListsController.GetLists (NetflixTitles.API)'
+2022-08-16 18:15:03.153 -07:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-08-16 18:15:03.153 -07:00 [DBG] The request has an origin header: 'http://localhost:5500'.
+2022-08-16 18:15:03.153 -07:00 [INF] CORS policy execution successful.
+2022-08-16 18:15:03.157 -07:00 [INF] Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token.
+2022-08-16 18:15:03.161 -07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-08-16 18:15:03.167 -07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-08-16 18:15:03.168 -07:00 [DBG] Connection id "0HMJV4314VUFO" completed keep alive response.
+2022-08-16 18:15:03.168 -07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7073/api/lists - - - 401 0 - 17.0258ms
+2022-08-16 18:16:18.533 -07:00 [DBG] Connection id "0HMJV4314VUFO" received FIN.
+2022-08-16 18:16:18.662 -07:00 [DBG] Connection id "0HMJV4314VUFO" sending FIN because: "The client closed the connection."
+2022-08-16 18:16:18.665 -07:00 [DBG] Connection id "0HMJV4314VUFO" disconnecting.
+2022-08-16 18:16:18.669 -07:00 [DBG] Connection id "0HMJV4314VUFO" stopped.
