@@ -1,7 +1,5 @@
-﻿<Properties StartupConfiguration="{5068A1A8-97D0-424B-93D7-E45816ACE686}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+﻿<Properties StartupConfiguration="{5068A1A8-97D0-424B-93D7-E45816ACE686}|Default" GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
   <Debugger.DebugSourceFolders>
     <String>/Users/chandlerpotter/Library/Caches/VisualStudio/17.0/Symbols/mysql-net/MySqlConnector/bce3051ac49c5aa99bbc30e228aff631a96e6f6b</String>
   </Debugger.DebugSourceFolders>
