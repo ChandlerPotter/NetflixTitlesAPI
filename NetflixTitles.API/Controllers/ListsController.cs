@@ -71,7 +71,7 @@ namespace NetflixTitles.API.Controllers
             Response.Headers.Add("X-Pagination",
                 JsonSerializer.Serialize(paginationMetadata));
 
-            return Ok(_mapper.Map<IEnumerable<ListWithoutTitlesDto>>(listsToReturn));
+            return Ok(_mapper.Map<IEnumerable<ListDto>>(listsToReturn));
         }
 
         [HttpGet("{id}", Name = "GetList")]
