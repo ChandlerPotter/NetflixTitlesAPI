@@ -1,15 +1,26 @@
-﻿<Properties StartupConfiguration="{5068A1A8-97D0-424B-93D7-E45816ACE686}|Default" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{5068A1A8-97D0-424B-93D7-E45816ACE686}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <Debugger.DebugSourceFolders>
     <String>/Users/chandlerpotter/Library/Caches/VisualStudio/17.0/Symbols/mysql-net/MySqlConnector/bce3051ac49c5aa99bbc30e228aff631a96e6f6b</String>
   </Debugger.DebugSourceFolders>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.NetflixTitles.API PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="NetflixTitles.API/Program.cs">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="NetflixTitles.API/Models/TitleDto.cs">
     <Files>
-      <File FileName="NetflixTitles.API/Program.cs" Line="24" Column="17" />
+      <File FileName="NetflixTitles.API/Models/TitleDto.cs" Line="7" Column="9" />
+      <File FileName="NetflixTitles.API/Entities/TitleList.cs" Line="1" Column="1" />
+      <File FileName="NetflixTitles.API/Models/TitleForUpdateDto.cs" Line="1" Column="1" />
+      <File FileName="NetflixTitles.API/Services/NetflixTitlesRepository.cs" Line="45" Column="1" />
+      <File FileName="NetflixTitles.API/Controllers/ListsController.cs" Line="69" Column="51" />
+      <File FileName="NetflixTitles.API/Models/ListDto.cs" Line="1" Column="1" />
+      <File FileName="NetflixTitles.API/Entities/List.cs" Line="1" Column="1" />
+      <File FileName="NetflixTitles.API/Models/AllTitlesDto.cs" Line="1" Column="1" />
+      <File FileName="NetflixTitles.API/Controllers/TitlesController.cs" Line="19" Column="41" />
+      <File FileName="NetflixTitles.API/appsettings.json" Line="1" Column="1" />
+      <File FileName="NetflixTitles.API/appsettings.Development.json" Line="1" Column="1" />
+      <File FileName="NetflixTitles.API/Controllers/AllTitlesController.cs" Line="58" Column="74" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,10 +28,11 @@
           <Node name="NetflixTitles" expanded="True">
             <Node name="NetflixTitles.API" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Profiles" expanded="True" />
+              <Node name="Entities" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="TitleDto.cs" selected="True" />
+              </Node>
               <Node name="Services" expanded="True" />
-              <Node name="appsettings.json" expanded="True" />
-              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -33,4 +45,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
 </Properties>
