@@ -86,7 +86,7 @@ namespace NetflixTitles.API.Controllers
 
             if (userRoleClaim == "admin")
             {
-                var adminListToReturn = await _netflixTitlesRepository.GetListAsync(id);
+                Entities.List? adminListToReturn = await _netflixTitlesRepository.GetListAsync(id);
                 return Ok(_mapper.Map<ListDto>(adminListToReturn));
             }
 
