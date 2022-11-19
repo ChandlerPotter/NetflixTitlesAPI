@@ -43,6 +43,7 @@ namespace NetflixTitles.API.Controllers
 
             String? userIdClaim = User.Claims.FirstOrDefault(
                 l => l.Type == USER_CLAIM_ID_STR)?.Value;
+
             if (userIdClaim == null)
             {
                 return BadRequest();
