@@ -40,7 +40,7 @@ namespace NetflixTitles.API.Controllers
         {
             pageSize = (pageSize > maxListsPageSize) ? maxListsPageSize : pageSize;
 
-            var userIdClaim = User.Claims.FirstOrDefault(
+            String? userIdClaim = User.Claims.FirstOrDefault(
                 l => l.Type == USER_CLAIM_ID_STR)?.Value;
 
             var userRoleClaim = User.Claims.FirstOrDefault(u => u.Type == "user_type")?.Value;
@@ -66,7 +66,7 @@ namespace NetflixTitles.API.Controllers
             Response.Headers.Add("X-Pagination",
                 JsonSerializer.Serialize(paginationMetadata));
 
-            return Ok(_mapper.Map<IEnumerable<ListWithoutTitlesDto>>(listsToReturn));
+            return Ok(_mapper.Map<IEnumerable<ListDto>>(listsToReturn));
         }
 
         [HttpGet("{id}", Name = "GetList")]

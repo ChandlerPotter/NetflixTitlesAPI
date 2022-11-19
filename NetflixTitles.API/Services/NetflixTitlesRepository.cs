@@ -18,7 +18,12 @@ namespace NetflixTitles.API.Services
         public async Task<(IEnumerable<Entities.List>, PaginationMetadata)> GetAllListsAsync(
             string? name, string? searchQuery, int pageNumber, int pageSize)
         {
-            var collection = _context.Lists.Include(l => l.User) as IQueryable<List>;
+            IQueryable<List> collection = _context.Lists
+                .Include(l => l.User)
+                .Include(l => l.TitleLists)
+                .ThenInclude(tl => tl.Title)
+                as IQueryable<List>;
+            
 
             if (!string.IsNullOrWhiteSpace(name))
             {
@@ -34,8 +39,8 @@ namespace NetflixTitles.API.Services
                 || (l.User != null && l.User.UserName.Contains(searchQuery)));
             }
 
-            var totalItemCount = await collection.CountAsync();
-            var paginationMetadata = new PaginationMetadata(
+            int totalItemCount = await collection.CountAsync();
+            PaginationMetadata? paginationMetadata = new PaginationMetadata(
                 totalItemCount, pageSize, pageNumber);
 
             var collectionToReturn = await collection.OrderBy(l => l.ListName)
@@ -51,7 +56,10 @@ namespace NetflixTitles.API.Services
         {
             var collection = _context.Lists
                 .Where(l => l.UserId.ToString() == claimId)
-                .Include(l => l.User) as IQueryable<List>;
+                .Include(l => l.User)
+                .Include(l => l.TitleLists)
+                .ThenInclude(tl => tl.Title)
+                as IQueryable<List>;
 
             if (!string.IsNullOrWhiteSpace(name))
             {
