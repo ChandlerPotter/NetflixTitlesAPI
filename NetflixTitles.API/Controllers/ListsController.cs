@@ -6,6 +6,7 @@ using NetflixTitles.API.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.JsonPatch;
 using System.Text.Json;
+using System.Collections.Generic;
 
 namespace NetflixTitles.API.Controllers
 {
@@ -40,8 +41,12 @@ namespace NetflixTitles.API.Controllers
         {
             pageSize = (pageSize > maxListsPageSize) ? maxListsPageSize : pageSize;
 
-            var userIdClaim = User.Claims.FirstOrDefault(
+            String? userIdClaim = User.Claims.FirstOrDefault(
                 l => l.Type == USER_CLAIM_ID_STR)?.Value;
+            if (userIdClaim == null)
+            {
+                return BadRequest();
+            }
 
             var userRoleClaim = User.Claims.FirstOrDefault(u => u.Type == "user_type")?.Value;
             if (userRoleClaim == "admin")
@@ -60,7 +65,7 @@ namespace NetflixTitles.API.Controllers
                 return NotFound();
             }
 
-            var (listsToReturn, paginationMetadata) =
+            (IEnumerable <Entities.List> listsToReturn, PaginationMetadata paginationMetadata) =
                 await _netflixTitlesRepository.GetUserListsAsync(userIdClaim, name, searchQuery, pageNumber, pageSize);
 
             Response.Headers.Add("X-Pagination",
@@ -73,10 +78,10 @@ namespace NetflixTitles.API.Controllers
 
         public async Task<ActionResult<ListDto>> GetList(int id)
         {
-            var userIdClaim = User.Claims.FirstOrDefault(
+            String? userIdClaim = User.Claims.FirstOrDefault(
                 l => l.Type == USER_CLAIM_ID_STR)?.Value;
 
-            var userRoleClaim = User.Claims.FirstOrDefault(u => u.Type == "user_type")?.Value;
+            String? userRoleClaim = User.Claims.FirstOrDefault(u => u.Type == "user_type")?.Value;
 
             if (userRoleClaim == "admin")
             {
