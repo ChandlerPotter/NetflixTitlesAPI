@@ -11,11 +11,11 @@ namespace NetflixTitles.API.Profiles
                .ForMember(dest => dest.Titles,
                opts => opts.MapFrom(src => src.TitleLists))
                .ForMember(dest => dest.UserName,
-               opts => opts.MapFrom(src => src.User.UserName));
+               opts => opts.MapFrom(src => src.User!.UserName));
 
             CreateMap<Entities.List, Models.ListWithoutTitlesDto>()
                .ForMember(dest => dest.UserName,
-               opts => opts.MapFrom(src => src.User.UserName)); ;
+               opts => opts.MapFrom(src => src.User!.UserName)); ;
 
             CreateMap<Models.ListForCreationDto, Entities.List>();
 

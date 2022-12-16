@@ -13,8 +13,6 @@ namespace NetflixTitles.API.Controllers
     [ApiController]
     [Authorize]
     [Route("api/lists")]
-
-
     public class ListsController : ControllerBase
     {
         private readonly INetflixTitlesRepository _netflixTitlesRepository;
