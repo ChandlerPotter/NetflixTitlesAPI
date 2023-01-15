@@ -104,10 +104,10 @@ namespace NetflixTitles.API.Controllers
 
         public async Task<ActionResult> RegisterUser(RegisterUserDto registerUserDto)
         {
-            var hasher = new PasswordHasher<RegisterUserDto>();
+            PasswordHasher<RegisterUserDto> hasher = new PasswordHasher<RegisterUserDto>();
             if (registerUserDto.Password.Length >= 6 || registerUserDto.Password.Length <= 16)
             {
-                var hashedPassword = hasher.HashPassword(registerUserDto, registerUserDto.Password);
+                String hashedPassword = hasher.HashPassword(registerUserDto, registerUserDto.Password);
                 registerUserDto.Password = hashedPassword;
             }
             else
@@ -116,9 +116,9 @@ namespace NetflixTitles.API.Controllers
                 return BadRequest();
             }
 
-            var finalUser = _mapper.Map<User>(registerUserDto);
+            User finalUser = _mapper.Map<User>(registerUserDto);
 
-            var userExists = await _netflixTitlesRepository.GetUserAsync(finalUser.UserName);
+            User? userExists = await _netflixTitlesRepository.GetUserAsync(finalUser.UserName);
             if (userExists != null)
             {
                 _logger.LogInformation($"user with UserName: {finalUser.UserName} already exists");
@@ -128,7 +128,7 @@ namespace NetflixTitles.API.Controllers
             _netflixTitlesRepository.AddUser(finalUser);
             await _netflixTitlesRepository.SaveChangesAsync();
 
-            var createdUser = _mapper.Map<UserDto>(finalUser);
+            UserDto createdUser = _mapper.Map<UserDto>(finalUser);
 
             return CreatedAtRoute("GetUser",
                 new 
